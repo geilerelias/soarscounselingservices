@@ -3,6 +3,13 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
+
+import {i18n} from './i18n'
+
+function $t(key) {
+    return i18n.t(key)
+}
+
 const store = new Vuex.Store({
     state: {
         numero: 10,
@@ -13,12 +20,13 @@ const store = new Vuex.Store({
         idBusiness: "",
 
         links: [
-            {title: "Home", icon: 'mdi-home', route: "home"},
-            {title: "About", icon: 'mdi-account-question', route: "about"},
-            {title: "Services", icon: 'mdi-railroad-light', route: "services"},
-            {title: "Frequent questions", icon: 'mdi-chat-question', route: "frequent-questions"},
+            {title: "home", icon: 'mdi-home', route: "home"},
+            {title: "about", icon: 'mdi-account-question', route: "about"},
+            {title: "services", icon: 'mdi-railroad-light', route: "services"},
+            {title: "blog", icon: 'mdi-chat-question', route: "blog"},
+            {title: "frequent_questions", icon: 'mdi-chat-question', route: "frequent-questions"},
             // {title: "Galería", icon: 'mdi-play-box-multiple', route: "gallery"},
-            {title: "Contact", icon: 'mdi-card-account-phone', route: "contact"},
+            {title: "contact", icon: 'mdi-card-account-phone', route: "contact"},
         ],
         linksWithAuth: [
             {route: "dashboard", icon: 'mdi-view-dashboard', title: "Dashboard"},

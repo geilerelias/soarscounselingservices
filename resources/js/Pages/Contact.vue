@@ -14,14 +14,14 @@
                                 <v-col class="col col-12">
                                     <h1
                                         class="text-h3 font-weight-500 mb-2 text-center white--text">
-                                        CONTACTANOS
+                                        CONTACT
                                     </h1>
                                     <v-responsive class="primary mx-auto mb-6"
                                                   style="max-width: 28px;">
                                         <v-divider aria-orientation="horizontal"/>
                                     </v-responsive>
 
-                                    <v-breadcrumbs class="justify-center pa-0 text--primary"
+                                    <v-breadcrumbs dark class="justify-center pa-0 text--primary"
                                                    :items="items"
                                                    divider="/"
                                     ></v-breadcrumbs>
@@ -44,7 +44,7 @@
                                     <v-col class="col-12">
                                         <h3
                                             class="text-uppercase text-h6 font-weight-bold mb-1 text-left">
-                                            MANTENTE EN CONTACTO CON NOSOTROS
+                                            KEEP IN TOUCH WITH US
                                         </h3>
                                         <v-responsive class=" base-divider primary mr-auto mb-6"
                                                       style="max-width: 28px;">
@@ -53,7 +53,10 @@
                                                        class="subject--light"/>
                                         </v-responsive>
                                         <p class="justify-text base-body text-body-1 grey--text text--darken-1 text-justify mb-6">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deleniti dicta dolore dolorum eligendi ex facere labore laboriosam non, pariatur, provident quis quod sapiente sint, sit suscipit totam veniam! Exercitationem?
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deleniti
+                                            dicta dolore dolorum eligendi ex facere labore laboriosam non, pariatur,
+                                            provident quis quod sapiente sint, sit suscipit totam veniam!
+                                            Exercitationem?
                                         </p>
                                     </v-col>
                                 </v-row>
@@ -90,14 +93,15 @@
                                     <div class="d-flex flex-column justify-center align-center">
                                         <a
                                             class="base-body text-body-1 mx-auto grey--text text--darken-1 text-left mb-0"
-                                            href="tel:573106947004">
-                                            +57 310 6947004
+                                            href="tel:14046441819">
+                                            +1 404 644 1819
                                         </a>
 
                                     </div>
                                 </div>
-                                <hr role="separator" aria-orientation="horizontal"
-                                    class="my-2 v-divider subject--light">
+
+                                <v-divider class="my-2"></v-divider>
+
                                 <div class="pt-2 mb-0 d-flex align-center">
                                     <div class="base-avatar d-inline-flex mb-3 align-self-start">
                                         <v-avatar class="transparent" size="72">
@@ -125,7 +129,7 @@
                                     <v-col class="col col-12">
                                         <h3
                                             class="text-uppercase text-h6 font-weight-bold mb-1 text-left">
-                                            ENVÍENOS SU MENSAJE
+                                            SEND US YOUR MESSAGE
                                         </h3>
                                         <div class="v-responsive base-divider primary mr-auto mb-6"
                                              style="max-width: 28px;">
@@ -144,7 +148,7 @@
                                 :lazy-validation="false">
                                 <v-text-field
                                     outlined
-                                    label="Nombre"
+                                    label="Name"
                                     v-model="mail.name"
                                     :rules="nameRules"
 
@@ -159,20 +163,20 @@
 
                                 <v-text-field
                                     outlined
-                                    label="Asunto"
+                                    label="Subject"
                                     v-model="mail.subject"
                                     :rules="subjectRules"
                                 ></v-text-field>
 
                                 <v-textarea
                                     outlined
-                                    label="Descripción del mensaje"
+                                    label="Content"
                                     v-model="mail.content"
                                     :rules="contentRules"
                                 ></v-textarea>
 
-                                <v-btn class="font-weight-bold accent--text" @click="send(mail)">
-                                    Enviar mensaje
+                                <v-btn class="font-weight-bold white--text primary" @click="send(mail)">
+                                    Send
                                 </v-btn>
                             </v-form>
                         </div>
@@ -182,17 +186,17 @@
         </v-sheet>
 
 
-
         <v-sheet class="gray" rounded="lg">
             <v-container>
-                <iframe class="rounded-lg"
-                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d884.4310638194539!2d-72.9038642946245!3d11.529421804915296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8e8b62ca3e7d7829%3A0x5b61f25a209cf1f0!2sCra.%207H%20%2333a-15%2C%20Riohacha%2C%20La%20Guajira%2C%20Colombia!3m2!1d11.529659599999999!2d-72.903386!5e1!3m2!1ses!2sve!4v1649976655824!5m2!1ses!2sve"
-                        style="border: 0px; display: block; height: 400px; width: 100%" allowfullscreen=""
-                        loading="lazy">
-                </iframe>
+                <v-card>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4627.686273658577!2d-84.06658762742123!3d34.05634656922949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s320%20Town%20Center%20Ave%20%7C%20Suite%20C-11%20%23506!5e0!3m2!1ses-419!2sco!4v1668903870957!5m2!1ses-419!2sco"
+                        height="450" style="border:0; width: 100%" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </v-card>
             </v-container>
         </v-sheet>
-
 
         <v-overlay :value="overlay">
             <v-progress-circular indeterminate size="64"></v-progress-circular>

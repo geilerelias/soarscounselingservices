@@ -231,13 +231,14 @@
                             </div>
                         </nav>-->
             <!-- Page Content -->
-            <main>
-                <div
-                    :style="$vuetify.breakpoint.mdAndUp?'margin-top: 140px !important;':$vuetify.breakpoint.smAndDown?'margin-top: 60px;':''">
-                    <slot></slot>
-                </div>
+            <v-main>
+                <!--                <div-->
+                <!--                    :style="$vuetify.breakpoint.mdAndUp?'margin-top: 140px !important;':$vuetify.breakpoint.smAndDown?'margin-top: 60px;':''">-->
+                <!--                    <slot></slot>-->
+                <!--                </div>-->
+                <slot></slot>
                 <footer-component/>
-            </main>
+            </v-main>
 
             <!-- Modal Portal -->
             <portal-target name="modal" multiple>

@@ -38,6 +38,10 @@ Route::get('/services', function () {
     return Inertia\Inertia::render('Services');
 })->name('services');
 
+Route::get('/blog', function () {
+    return Inertia\Inertia::render('Blog');
+})->name('blog');
+
 Route::get('/frequent-questions', function () {
     return Inertia\Inertia::render('FrequentQuestions');
 })->name('frequent-questions');
