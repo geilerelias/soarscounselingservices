@@ -123,60 +123,57 @@
                     </h1>
                     <v-divider class="primary mx-auto mb-2  theme--light" style="max-width: 28px;"></v-divider>
                 </div>
-                <v-row class="mt-8 mx-auto">
-                    <v-col class="offset-2 col-lg-4 col-12">
-                        <v-card class="text-center text-body-1 pa-4" style="max-width: 300px">
-                            <div class="mb-2">
-                                <v-icon
-                                    class="text-h1 black--text">
-                                    mdi-account
-                                </v-icon>
-                            </div>
-                            <div class="text-h4 font-weight-black mb-6">
-                                Individual
-                            </div>
-                            <div class="d-flex justify-center">
-                                <div class="font-weight-bold text-h5">$</div>
-                                <div class="text-h2">
-                                    95
-                                </div>
-                            </div>
-                            <div class="my-6 text-h6">
-                                <div class="my-1">
-                                    per session.
-                                </div>
-                            </div>
-                            <v-btn outlined block x-large class="mt-10">
-                                apply for
-                            </v-btn>
-                        </v-card>
-                    </v-col>
+                <v-card flat class="mt-8 d-flex justify-center flex-column flex-md-row  pt-8 mb-6">
 
-                    <v-col class="col-lg-4 col-12">
-                        <v-card dark style="max-width: 300px"
-                                class="text-center text-body-1 pa-4  secondary darken-1 pt-8 mt-n4">
-                            <div class="mb-2">
-                                <v-icon
-                                    class="text-h1  white--text">
-                                    mdi-account-group
-                                </v-icon>
+                    <v-card class="text-center text-body-1 mx-auto pa-4" style="max-width: 300px;width: 300px;">
+                        <div class="mb-2">
+                            <v-icon
+                                class="text-h1 black--text">
+                                mdi-account
+                            </v-icon>
+                        </div>
+                        <div class="text-h4 font-weight-black mb-6">
+                            Individual
+                        </div>
+                        <div class="d-flex justify-center">
+                            <div class="font-weight-bold text-h5">$</div>
+                            <div class="text-h2">
+                                95
                             </div>
-                            <div class="text-h4 font-weight-black mb-6">Group</div>
-                            <div class="d-flex justify-center">
-                                <div class="font-weight-bold text-h5">$</div>
-                                <div class="text-h2">50</div>
-                            </div>
-                            <div class="my-6 text-h6">
+                        </div>
+                        <div class="my-6 text-h6">
+                            <div class="my-1">
                                 per session.
                             </div>
-                            <v-btn outlined dark block x-large
-                                   class="mt-10 accent">
-                                apply for
-                            </v-btn>
-                        </v-card>
-                    </v-col>
+                        </div>
+                        <v-btn outlined block x-large class="mt-10">
+                            apply for
+                        </v-btn>
+                    </v-card>
 
-                </v-row>
+                    <v-card dark style="max-width: 300px;width: 300px;"
+                            class="text-center text-body-1 mx-auto pa-4 secondary darken-1 pt-8 mt-8 mt-md-n4 ">
+                        <div class="mb-2">
+                            <v-icon
+                                class="text-h1  white--text">
+                                mdi-account-group
+                            </v-icon>
+                        </div>
+                        <div class="text-h4 font-weight-black mb-6">Group</div>
+                        <div class="d-flex justify-center">
+                            <div class="font-weight-bold text-h5">$</div>
+                            <div class="text-h2">50</div>
+                        </div>
+                        <div class="my-6 text-h6">
+                            per session.
+                        </div>
+                        <v-btn outlined dark block x-large
+                               class="mt-10 accent">
+                            apply for
+                        </v-btn>
+                    </v-card>
+
+                </v-card>
             </v-container>
         </section>
     </app-layout>
