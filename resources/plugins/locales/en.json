@@ -37,6 +37,20 @@
     },
     "services": {
         "our-services": "Our Services.",
-        "these-are-the-main-services-we-offer": "These are the main services we offer."
+        "these-are-the-main-services-we-offer": "These are the main services we offer.",
+        "apply_now": "APPLY NOW",
+        "cost_per_session": "COST PER SESSION",
+        "individual": "Individual",
+        "group": "Group",
+        "per_session": "per session",
+        "apply_for": "Apply for",
+        "pay_by": "PAY BY",
+        "trusted_by_the_best_in_the_business": "TRUSTED BY THE BEST IN THE BUSINESS",
+        "cash": "Cash",
+        "check": "Check",
+        "paypal": "PayPal",
+        "cash_app": "Cash App",
+        "venmo": "Venmo",
+        "zelle": "Zelle"
     }
 }

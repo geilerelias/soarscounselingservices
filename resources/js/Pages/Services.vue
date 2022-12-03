@@ -14,7 +14,7 @@
                                 <v-col class="col col-12">
                                     <h1
                                         class="text-h3 font-weight-500 mb-2 text-center white--text">
-                                        Services
+                                        {{ $t('links.services') }}
                                     </h1>
                                     <v-responsive class="primary mx-auto mb-6"
                                                   style="max-width: 28px;">
@@ -73,53 +73,60 @@
             </v-container>
         </section>
 
-        <!--        <section>-->
-        <!--            <v-sheet class=" theme&#45;&#45;light">-->
-        <!--                <v-container class=" py-4 py-lg-8">-->
-        <!--                    <v-row class="row">-->
+        <section>
+            <v-sheet class=" theme--light">
+                <v-container class=" py-4 py-lg-8">
+                    <v-row class="row">
 
-        <!--                        <v-col v-for="item in services" :key="item.id" class="col-md-4 col-12">-->
-        <!--                            <v-card outlined class="">-->
-        <!--                                <v-img :src="item.src" cover style="height: 280px;">-->
-        <!--                                    <template v-slot:placeholder>-->
-        <!--                                        <v-row-->
-        <!--                                            class="fill-height ma-0"-->
-        <!--                                            align="center"-->
-        <!--                                            justify="center"-->
-        <!--                                        >-->
-        <!--                                            <v-progress-circular-->
-        <!--                                                indeterminate-->
-        <!--                                                color="grey lighten-5"-->
-        <!--                                            ></v-progress-circular>-->
-        <!--                                        </v-row>-->
-        <!--                                    </template>-->
-        <!--                                </v-img>-->
+                        <v-col v-for="item in services" :key="item.id" class="col-md-4 col-12">
+                            <v-hover v-slot="{ hover }">
+                                <v-card outlined class="" style="transition: all 0.5s;"
+                                        :class="hover ? 'mt-n5 mb-5 elevation-12' : ''">
+                                    <v-img :src="item.src"
+                                           style="height: 280px;transition: all 0.5s;"
+                                           cover
+                                           :aspect-ratio="16/9"
+                                           :class="hover ? 'zoom' : ''">
+                                        <template v-slot:placeholder>
+                                            <v-row
+                                                class="fill-height ma-0"
+                                                align="center"
+                                                justify="center"
+                                            >
+                                                <v-progress-circular
+                                                    indeterminate
+                                                    color="grey lighten-5"
+                                                ></v-progress-circular>
+                                            </v-row>
+                                        </template>
+                                    </v-img>
 
-        <!--                                <v-responsive class="mx-auto text-center pa-4" style="max-width: 360px;">-->
-        <!--                                    <div class="text-h5 mt-5">{{ item.name }}</div>-->
-        <!--                                    <div class="text-h6 mt-5 text-justify">-->
-        <!--                                        Lorem ipsum dolor sit amet consectetur adipisicing-->
-        <!--                                        elit. Voluptatum commodi corrupti maiores ex sunt dolorum inventore facilis-->
-        <!--                                        reprehenderit ullam minima quaerat sit!-->
-        <!--                                    </div>-->
+                                    <v-responsive class="mx-auto text-center pa-4" style="max-width: 360px;">
+                                        <div class="text-h5 mt-5">{{ item.name }}</div>
+                                        <div class="text-h6 mt-5 text-justify">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Voluptatum commodi corrupti maiores ex sunt dolorum inventore facilis
+                                            reprehenderit ullam minima quaerat sit!
+                                        </div>
 
-        <!--                                </v-responsive>-->
-        <!--                            </v-card>-->
-        <!--                        </v-col>-->
+                                    </v-responsive>
+                                </v-card>
+                            </v-hover>
+                        </v-col>
 
-        <!--                    </v-row>-->
-        <!--                </v-container>-->
-        <!--            </v-sheet>-->
-        <!--        </section>-->
+                    </v-row>
+                </v-container>
+            </v-sheet>
+        </section>
 
         <section>
             <v-container class="py-4 py-lg-8">
                 <div class="text-center">
                     <div class="text-uppercase overline primary--text ">
-                        apply now
+                        {{ $t('services.apply_now') }}
                     </div>
                     <h1 class="text-h6 text-lg-h5 text-uppercase font-weight-black mb-2 text-center">
-                        Cost per session
+                        {{ $t('services.cost_per_session') }}
                     </h1>
                     <v-divider class="primary mx-auto mb-2  theme--light" style="max-width: 28px;"></v-divider>
                 </div>
@@ -133,7 +140,7 @@
                             </v-icon>
                         </div>
                         <div class="text-h4 font-weight-black mb-6">
-                            Individual
+                            {{ $t('services.individual') }}
                         </div>
                         <div class="d-flex justify-center">
                             <div class="font-weight-bold text-h5">$</div>
@@ -143,11 +150,11 @@
                         </div>
                         <div class="my-6 text-h6">
                             <div class="my-1">
-                                per session.
+                                {{ $t("services.per_session") }}.
                             </div>
                         </div>
                         <v-btn outlined block x-large class="mt-10">
-                            apply for
+                            {{ $t("services.apply_for") }}
                         </v-btn>
                     </v-card>
 
@@ -159,21 +166,71 @@
                                 mdi-account-group
                             </v-icon>
                         </div>
-                        <div class="text-h4 font-weight-black mb-6">Group</div>
+                        <div class="text-h4 font-weight-black mb-6">{{ $t("services.group") }}</div>
                         <div class="d-flex justify-center">
                             <div class="font-weight-bold text-h5">$</div>
                             <div class="text-h2">50</div>
                         </div>
                         <div class="my-6 text-h6">
-                            per session.
+                            {{ $t("services.per_session") }}.
                         </div>
                         <v-btn outlined dark block x-large
                                class="mt-10 accent">
-                            apply for
+                            {{ $t("services.apply_for") }}
                         </v-btn>
                     </v-card>
 
                 </v-card>
+            </v-container>
+        </section>
+
+        <section>
+            <v-container>
+                <div class="text-center">
+                    <h1 class="text-h6 text-lg-h5 text-uppercase font-weight-black mb-2 text-center">
+                        {{ $t("services.pay_by") }}
+                    </h1>
+                    <v-divider class="primary mx-auto mb-2  theme--light" style="max-width: 28px;"></v-divider>
+                </div>
+
+                <div class="v-sheet theme--light">
+                    <div class="container text-center">
+                        <div class="text-body-1 text-uppercase font-weight-bold">
+                            {{ $t("services.trusted_by_the_best_in_the_business") }}
+                        </div>
+                        <div class="my-4">
+                            <v-row dense>
+                                <v-col v-for="item in payBy" :key="item.id"
+                                       class="col-sm-6 col-md-4 col-12 text-center d-flex justify-space-around">
+                                    <a href="#">
+                                        <v-sheet class="grey lighten-4 text-center rounded-lg"
+                                                 style="max-width:120px;width:120px">
+                                            <v-img class="mx-auto" style="width:96px; height: 96px;" :src="item.icon">
+                                                <template v-slot:placeholder>
+                                                    <v-row
+                                                        class="fill-height ma-0"
+                                                        align="center"
+                                                        justify="center"
+                                                    >
+                                                        <v-progress-circular
+                                                            indeterminate
+                                                            color="primary"
+                                                        ></v-progress-circular>
+                                                    </v-row>
+                                                </template>
+                                            </v-img>
+                                            <p class="primary--text font-weight-bold">
+                                                {{ $t(`services.${item.name}`) }}
+                                            </p>
+                                        </v-sheet>
+                                    </a>
+                                </v-col>
+
+                            </v-row>
+                        </div>
+                    </div>
+                </div>
+
             </v-container>
         </section>
     </app-layout>
@@ -239,7 +296,32 @@ export default {
                 name: "Anxiety Management",
                 src: bg9
             }
-
+        ],
+        payBy: [
+            {
+                name: "cash",
+                icon: 'https://img.icons8.com/fluency/96/null/cash--v1.png'
+            },
+            {
+                name: "check",
+                icon: 'https://img.icons8.com/fluency/96/null/paycheque.png'
+            },
+            {
+                name: "paypal",
+                icon: 'https://img.icons8.com/fluency/96/null/paypal.png'
+            },
+            {
+                name: "cash_app",
+                icon: 'https://img.icons8.com/fluency/96/null/cash-app--v3.png'
+            },
+            {
+                name: "venmo",
+                icon: 'https://img.icons8.com/ultraviolet/96/null/venmo.png'
+            },
+            {
+                name: "zelle",
+                icon: 'https://img.icons8.com/color/96/null/zelle.png'
+            }
         ],
         breadcrumbs: [
             {

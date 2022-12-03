@@ -2,6 +2,7 @@
     <div>
         <v-fade-transition>
             <v-system-bar
+                style="transition: all 0.3s;"
                 color="primary"
                 absolute
                 v-show="$vuetify.breakpoint.smAndUp && flat"
@@ -25,6 +26,7 @@
         </v-fade-transition>
         <v-fade-transition>
             <v-app-bar
+                style="transition: all 0.3s;"
                 height="60"
                 shrink-on-scroll
                 :extended="$vuetify.breakpoint.mdAndUp && flat"

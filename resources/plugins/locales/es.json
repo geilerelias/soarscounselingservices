@@ -38,6 +38,20 @@
     },
     "services": {
         "our-services": "Nuestros servicios.",
-        "these-are-the-main-services-we-offer": "Estos son los principales servicios que ofrecemos."
+        "these-are-the-main-services-we-offer": "Estos son los principales servicios que ofrecemos.",
+        "apply_now": "Aplicar ahora",
+        "cost_per_session": "Costo por sesión",
+        "individual": "Individual",
+        "group": "Grupal",
+        "per_session": "por sección",
+        "apply_for": "Solicitar",
+        "pay_by": "Métodos de pago",
+        "trusted_by_the_best_in_the_business": "CON LA CONFIANZA DE LOS MEJORES EN EL NEGOCIO",
+        "cash": "Efectivo",
+        "check": "Cheque",
+        "paypal": "PayPal",
+        "cash_app": "Cash App",
+        "venmo": "Venmo",
+        "zelle": "Zelle"
     }
 }
