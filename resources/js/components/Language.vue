@@ -42,8 +42,8 @@ export default {
     data() {
         return {
             select: {
-                locale: process.env.VUE_APP_I18N_LOCALE,
-                title: `${process.env.VUE_APP_I18N_LOCALE}`
+                locale: import.meta.env.VUE_APP_I18N_LOCALE,
+                title: `${import.meta.env.VUE_APP_I18N_LOCALE}`
             },
             model: null,
 

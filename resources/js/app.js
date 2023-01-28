@@ -1,16 +1,24 @@
-require('./bootstrap');
+import './bootstrap';
 
-require('moment');
+//material icons
+import "@mdi/font/css/materialdesignicons.css";
 
+//estilos
+import '../css/app.css';
+
+//raíz de vue
 import Vue from 'vue';
 
-import {InertiaApp} from '@inertiajs/inertia-vue';
-import {InertiaForm} from 'laravel-jetstream';
-import PortalVue from 'portal-vue';
+
+//inertia
+import {createInertiaApp, Head, Link} from '@inertiajs/vue2'
+
 
 //vuetify
 import vuetify from '../plugins/vuetify'
 
+//Ziggy Vue
+import {ZiggyVue} from '../../vendor/tightenco/ziggy/dist/vue.m';
 
 //material design icons
 import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
@@ -19,29 +27,33 @@ import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loade
 //store
 import store from "../plugins/store";
 
-
-import VueI18n from 'vue-i18n'
-
-Vue.use(VueI18n)
-
 import {i18n} from '@/../plugins/i18n'
-
-Vue.mixin({methods: {route}});
-Vue.use(InertiaApp);
-Vue.use(InertiaForm);
-Vue.use(PortalVue);
 
 const app = document.getElementById('app');
 
-new Vue({
-    vuetify,
-    store,
-    i18n,
-    render: (h) =>
-        h(InertiaApp, {
-            props: {
-                initialPage: JSON.parse(app.dataset.page),
-                resolveComponent: (name) => require(`./Pages/${name}`).default,
-            },
-        }),
-}).$mount(app);
+const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
+
+
+createInertiaApp({
+    progress: {
+        color: '#29d',
+    },
+    title: (title) => `${title} ${title !== '' ? '-' : ''} ${appName}`,
+    resolve: name => {
+        const pages = import.meta.glob('./Pages/**/*.vue', {eager: true})
+        return pages[`./Pages/${name}.vue`]
+    },
+    setup({el, App, props, plugin}) {
+        Vue.use(plugin)
+        Vue.use(i18n)
+        Vue.use(ZiggyVue, Ziggy)
+        Vue.component('InertiaHead', Head)
+        Vue.component('InertiaLink', Link)
+        new Vue({
+            vuetify,
+            store,
+            i18n,
+            render: h => h(App, props),
+        }).$mount(el)
+    },
+});

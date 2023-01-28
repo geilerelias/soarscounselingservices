@@ -1,0 +1,57 @@
+{
+    "spanish": "Español",
+    "english": "Inglés",
+    "translate_page": "Traducir página",
+    "links": {
+        "home": "Inicio",
+        "testimonial": "Testimonios",
+        "services": "Servicios",
+        "blog": "Blog",
+        "frequent_questions": "Preguntas frecuentes",
+        "contact": "Contacto"
+    },
+    "footer": {
+        "all_rights_reserved": "Todos los derechos reservados.",
+        "quick-links": "Enlaces rápidos.",
+        "connect": "Conectar"
+    },
+    "sexual_offense_and_recovery_specialist": "Especialista en recuperación y delitos sexuales.",
+    "vision": "Visión",
+    "vision_content": "Para el año 2030, SOARS será reconocida como una empresa líder en la prestación de servicios profesionales especializados en tratamientos terapéuticos de calidad, buscando siempre generar bienestar social.\n",
+    "mission": "Misión",
+    "mission_content": "SOARS ofrece servicios de terapeutas profesionales individuales o grupales. Con más de 20 años de experiencia, SOARS estará siempre atento a las necesidades de sus pacientes y brinda una dedicación especializada y única en la búsqueda del bienestar y el cambio.",
+    "our": "nuestros ",
+    "values": {
+        "text": "Valores",
+        "description": "Debido a más de 20 años de experiencia, <span class='primary--text'>SOARS</span> tiene muchos valores, sin embargo, los siguientes valores destacan como fundamentales:",
+        "QUALITY_AND_PERSONALIZED_ATTENTION": "CALIDAD Y ATENCIÓN PERSONALIZADA",
+        "QUALITY_AND_PERSONALIZED_ATTENTION_DESCRIPTION": "Nuestro equipo de profesionales son especialistas, cuentan con una atención de calidad, personalizada, con calidez humana, adecuada a cada uno de los pacientes y su núcleo familiar.",
+        "CONFIDENTIALITY": "CONFIDENCIALIDAD",
+        "CONFIDENTIALITY_DESCRIPTION": "En SOARS ofrecemos total y absoluta garantía de confidencialidad, así como seguridad en el manejo de la información.",
+        "INTEGRAL_SERVICES": "SERVICIOS INTEGRALES",
+        "INTEGRAL_SERVICES_DESCRIPTION": "En SOARS encontrará servicios integrales de acuerdo a sus necesidades y personalidad, brindando atención a personas y familias que buscan bienestar y cambio."
+    },
+    "home": {
+        "learn_more": "Saber más",
+        "testimonials": "Testimonios",
+        "what_our_customers_are_saying": "Lo que dicen nuestros clientes"
+    },
+    "services": {
+        "our-services": "Nuestros servicios.",
+        "these-are-the-main-services-we-offer": "Estos son los principales servicios que ofrecemos.",
+        "apply_now": "Aplicar ahora",
+        "cost_per_session": "Costo por sesión",
+        "individual": "Individual",
+        "group": "Grupal",
+        "per_session": "por sección",
+        "apply_for": "Solicitar",
+        "pay_by": "Métodos de pago",
+        "trusted_by_the_best_in_the_business": "CON LA CONFIANZA DE LOS MEJORES EN EL NEGOCIO",
+        "cash": "Efectivo",
+        "check": "Cheque",
+        "paypal": "PayPal",
+        "cash_app": "Cash App",
+        "venmo": "Venmo",
+        "zelle": "Zelle"
+    }
+}

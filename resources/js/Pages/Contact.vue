@@ -218,7 +218,7 @@
 </template>
 
 <script>
-import AppLayout from "@/Layouts/AppLayout";
+import AppLayout from "@/Layouts/AppLayout.vue";
 import bg from '@/../images/contact-us-image.jpg'
 
 export default {

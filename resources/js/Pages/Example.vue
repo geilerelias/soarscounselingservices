@@ -4,7 +4,7 @@
             app
             color="#43a047"
             dark
-            
+
         >
             <template v-slot:img="{ props }">
                 <v-img
@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import appLayout from "@/Layouts/AppLayout";
+import appLayout from "@/Layouts/AppLayout.vue";
 
 
 export default {

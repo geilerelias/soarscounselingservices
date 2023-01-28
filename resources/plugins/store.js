@@ -21,12 +21,10 @@ const store = new Vuex.Store({
 
         links: [
             {title: "home", icon: 'mdi-home', route: "home"},
-            {title: "about", icon: 'mdi-account-question', route: "about"},
             {title: "services", icon: 'mdi-railroad-light', route: "services"},
-            {title: "blog", icon: 'mdi-chat-question', route: "blog"},
-            {title: "frequent_questions", icon: 'mdi-chat-question', route: "frequent-questions"},
-            // {title: "Galería", icon: 'mdi-play-box-multiple', route: "gallery"},
+            {title: "testimonial", icon: 'mdi-railroad-light', route: "testimonial"},
             {title: "contact", icon: 'mdi-card-account-phone', route: "contact"},
+            // {title: "Galería", icon: 'mdi-play-box-multiple', route: "gallery"},
         ],
         linksWithAuth: [
             {route: "dashboard", icon: 'mdi-view-dashboard', title: "Dashboard"},

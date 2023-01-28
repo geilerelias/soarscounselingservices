@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16bcd1fb28887a4bf0bd6ed06f08512e",
+    "content-hash": "16b56501cd0faefa007e0c9fd37bd4b4",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5705,23 +5705,25 @@
         },
         {
             "name": "tightenco/ziggy",
-            "version": "0.9.4",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tighten/ziggy.git",
-                "reference": "82ea6ec6cb6ab3545b0245310b2a424316fe48d8"
+                "reference": "419ac3f71b60795b392ec1ba6ee72e179977afc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tighten/ziggy/zipball/82ea6ec6cb6ab3545b0245310b2a424316fe48d8",
-                "reference": "82ea6ec6cb6ab3545b0245310b2a424316fe48d8",
+                "url": "https://api.github.com/repos/tighten/ziggy/zipball/419ac3f71b60795b392ec1ba6ee72e179977afc8",
+                "reference": "419ac3f71b60795b392ec1ba6ee72e179977afc8",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "laravel/framework": ">=5.4@dev"
             },
             "require-dev": {
-                "orchestra/testbench": "^5.0"
+                "orchestra/testbench": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0",
+                "phpunit/phpunit": "^6.0 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "extra": {
@@ -5748,10 +5750,14 @@
                 {
                     "name": "Jake Bathman",
                     "email": "jake@tighten.co"
+                },
+                {
+                    "name": "Jacob Baker-Kretzmar",
+                    "email": "jacob@tighten.co"
                 }
             ],
             "description": "Generates a Blade directive exporting all of your named Laravel routes. Also provides a nice route() helper function in JavaScript.",
-            "homepage": "https://github.com/tightenco/ziggy",
+            "homepage": "https://github.com/tighten/ziggy",
             "keywords": [
                 "Ziggy",
                 "javascript",
@@ -5760,9 +5766,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tighten/ziggy/issues",
-                "source": "https://github.com/tighten/ziggy/tree/0.9.4"
+                "source": "https://github.com/tighten/ziggy/tree/v1.5.0"
             },
-            "time": "2020-06-05T14:42:41+00:00"
+            "time": "2022-09-23T22:15:05+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",

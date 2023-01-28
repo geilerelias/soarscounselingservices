@@ -1,139 +1,169 @@
 <template>
     <app-layout>
-        <v-img cover
-               :src="bg1"
-               class="white--text"
-               gradient="rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0 0 0 / 33%), rgb(0 0 0 / 70%)"
-               style="height:calc(100vh - 142px);"
-        >
-            <v-container fluid class="fill-height px-12">
-                <v-row class="fill-height align-bottom d-flex justify-start align-end">
-                    <v-col class="pb-12">
+        <section>
+            <v-container class="mt-10">
+                <v-row>
+                    <v-col class="col-md-6 col-lg-7 col-12">
+                        <h1 class="primary--text text-h5 text-sm-h4 text-lg-h3 mt-xl-4 font-weight-bold font-weight-bold">
+                            Eamonn Walsh, LCSW
+                        </h1>
 
-                        <!--                        <div class="mb-4 display-2 white&#45;&#45;text font-weight-bold">-->
-                        <!--                            Hello, welcome to soarscounselingservices-->
-                        <!--                            <v-divider style="max-width: 300px;width: 300px;" class="white rounded"></v-divider>-->
-                        <!--                        </div>-->
-
-                        <v-responsive class="text-subtitle-1 text-lg-h6 accent--text font-weight-bold mb-5"
-                                      style="max-width: 600px;">
-                            {{ $t('sexual_offense_and_recovery_specialist') }}
-                        </v-responsive>
-                        <inertia-link :href="route('about')">
-                            <v-btn contained large class="px-5 primary"
-                                   style="font-family: 'Montserrat', sans-serif !important;">
-                                {{ $t('home.learn_more') }}
-                            </v-btn>
-                        </inertia-link>
+                        <h2 class="text-subtitle-1 text-sm-body-1 mt-4 text-justify">
+                            I was born in London of Irish parents. Before coming to the United States I worked as a
+                            social worker in a variety of settings. I worked as a Community Social Worker and as a front
+                            line residential staff in a group home for troubled boys and also for adults with mental
+                            illness. When I came to the United Sates I worked as a Job Coach finding jobs for adults
+                            with mental illness. I also worked as a Social Worker for the elderly in Washington DC.
+                            After this I became a therapist and have been providing therapy to adolescents for over 2O
+                            years. In my free time I enjoy watching (Atlanta United!) and playing soccer and riding my
+                            motorcycle. I believe and work at developing strong rapport with all of my clients. I have a
+                            warm non-judgmental, supportive approach. I provide individual and group therapy.
+                        </h2>
                     </v-col>
-                </v-row>
-            </v-container>
-            <template v-slot:placeholder>
-                <v-row
-                    class="fill-height ma-0"
-                    align="center"
-                    justify="center"
-                >
-                    <v-progress-circular
-                        indeterminate
-                        color="primary"
-                        size="200"
-                    ></v-progress-circular>
-                </v-row>
+                    <v-col class="d-none d-md-block col-md-6 col-lg-5 col-12">
+                        <v-card outlined class="rounded-lg">
+                            <v-img :src="ImgEamonn" class="rounded-lg" cover outline>
 
-            </template>
-        </v-img>
-        <mission-vision></mission-vision>
-        <our-values></our-values>
-
-        <v-sheet light class="transparent">
-            <v-container class="py-4 py-lg-8">
-                <div class="text-center">
-                    <div class="text-uppercase overline primary--text ">
-                        {{ $t("home.testimonials") }}
-                    </div>
-                    <h1 class="text-h6 text-lg-h5 text-uppercase font-weight-black mb-2 text-center">
-                        {{ $t('home.what_our_customers_are_saying') }}
-                    </h1>
-                    <v-divider class="primary mx-auto mb-2  theme--light" style="max-width: 28px;"></v-divider>
-
-                </div>
-                <v-row class=" mt-6">
-                    <v-col v-for="item in testimonials" :key="item.id" class="col-sm-6 col-lg-3 col-12">
-                        <v-card flat light>
-                            <v-card-title class="">
-                                <v-sheet
-                                    class="d-flex align-start justify-center mx-auto text-h1 white--text mt-n6 position-relative accent"
-                                    style="height: 48px; width: 60px; border-radius: 100%;">
-                                    <div class="position-absolute" style="top: 16px;">“</div>
-                                </v-sheet>
-                            </v-card-title>
-                            <div class="pa-3">
-                                <div class="text-h6 secondary--text">
-                                    {{ item.content }}
-                                </div>
-                                <div class="d-flex align-center mt-4">
-                                    <div class="mr-2">
-                                        <v-avatar dark size="50" color="primary">
-                                            <v-icon dark>
-                                                mdi-account
-                                            </v-icon>
-                                        </v-avatar>
-                                    </div>
-                                    <div class="text-left">
-                                        <div class="text-h6">{{ item.person }}</div>
-                                    </div>
-                                </div>
-                            </div>
+                            </v-img>
                         </v-card>
                     </v-col>
                 </v-row>
             </v-container>
-        </v-sheet>
+
+        </section>
+
+        <v-container>
+            <v-sheet v-for="item in information" :key="item.id" class="my-12">
+                <div class="text-left">
+                    <h1 class="text-h6 text-lg-h5 text-uppercase font-weight-black mb-2 ">
+                        {{ item.name }}
+                    </h1>
+
+                    <v-divider class="primary mb-2  theme--light" style="max-width: 28px;"></v-divider>
+                </div>
+
+                <v-row class="mt-4">
+
+                    <v-col v-for="element in item.children" :key="item.id" class="col-md-6 col-12">
+                        <div class="d-flex">
+                            <div class="mr-2">
+                                <v-sheet light class="pa-2 rounded secondary">
+                                    <v-icon dark>
+                                        {{ element.icon }}
+                                    </v-icon>
+                                </v-sheet>
+                            </div>
+                            <div>
+                                <div class="text-h5">{{ element.name }}</div>
+                                <div v-if="element.description" class="text-h6 mt-1" v-html="element.description">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </v-col>
+
+                </v-row>
+
+            </v-sheet>
+        </v-container>
+
+        <MissionVision/>
+
+        <OurValues/>
     </app-layout>
 </template>
 
 <script>
-import appLayout from "@/Layouts/AppLayout";
-import bg1 from '@/../images/pexels-castorly-stock-3768343.jpg'
-import ourValues from "@/components/OurValues";
-import missionVision from "@/components/MissionVision";
+import appLayout from "@/Layouts/AppLayout.vue";
+import ImgEamonn from '@/../images/eamonn.jpg'
+import OurValues from "@/components/OurValues.vue";
+import MissionVision from "@/components/MissionVision.vue";
 
 export default {
-    name: "Home",
+    name: "About",
     components: {
+        MissionVision,
+        OurValues,
         appLayout,
-        ourValues,
-        missionVision
     },
     data: () => ({
-        bg1,
-        testimonials: [
+        ImgEamonn,
+        information: [
             {
-                content: `Eamonn Walsh provides effective interventions for adolescent sex offenders and children with sexual behavior problems that are court involved.  By offering a safe place,  treatment opportunities are possible and participants are able to learn appropriate and responsible social and sexual behavior to substitute for the inappropriate and irresponsible behavior. Participants are taught to identify and interrupt thier sexual abuse cycle and through psycho-education modules, behavior techniques and empathy training participants are offered the opportunity to learn that sexually abusive behavior is manageable and controllable`,
-                person: 'Chief Probation Officer'
+                name: 'Qualifications',
+                children: [
+                    {
+                        name: 'Bachelors in Social Anthropology',
+                        description: `<span class="font-weight-bold">University of Swansea</span> <br>
+                            Wales - United Kingdom (UK)`,
+                        icon: 'mdi-account-school'
+                    },
+                    {
+                        name: 'Masters in Social Work',
+                        description: `<span class="font-weight-bold">University of Bangor  </span><br>
+                            Wales - United Kingdom (UK)`,
+                        icon: 'mdi-account-school'
+                    },
+                ]
             }, {
-                content: `My child has participated in the SOARS program headed up by Mr. Walsh with great results.  Mr. Walsh helped give tools to my child which have been very valuable, that have helped them identify wrong and faulty thinking patterns ultimately replacing them with healthy ones.  Mr. Walsh as a wealth of experience and knowledge, but is also very kind and compassionate.  I am so grateful that Mr. Walsh has been an influence and am grateful that my child’s situation is better because of the SOARS program.`,
-                person: 'Participant Parent'
+                name: 'License and State',
+                children: [
+                    {
+                        name: 'Licensed Clinical Social Worker Georgia CSW002273',
+                        description: '',
+                        icon: 'mdi-certificate'
+                    },
+                ]
             }, {
-                content: `I’ve participated in the SOARS program and found it to be very helpful.  Mr. Walsh was able to help me think about things in a better way, which has really changed my outlook and relationships.  He also took time to work with my attorneys and probation officer given I’d made some mistakes that had consequences.  I am glad to have gotten counseling from him`,
-                person: 'From Participant'
+                name: 'Years in Practice',
+                children: [
+                    {
+                        name: '20 Years',
+                        description: '',
+                        icon: 'mdi-calendar-clock-outline'
+                    },
+                ]
             }, {
-                content: `"My name is Stacy Levy and I have been a  defense attorney for over 27 years.  In my practice I have worked with many different therapists  to help my clients with  extremely delicate mental health issues.   Eamonn Walsh is one of the most extraordinary therapists I have ever had the opportunity to work with.   His kindness is only outweighed by his intellect.   He understands that treating the client often includes working closely with the family and always goes above and beyond in his approach to the well being of his patients. Eamonn is a credit to his profession and his clients are lucky to have him in their corner!"`,
-                person: 'Stacy Levy'
+                name: 'Client Focus',
+                children: [
+                    {
+                        name: 'Adolescents 13-18',
+                        description: '',
+                        icon: 'mdi-image-filter-center-focus-strong'
+                    },
+                ]
             }, {
-                content: `Eamonn is an incredible person. He takes time to get to know those he works with and seems to have an incredible way of being able to hear people out. He somehow stuck his hand out to save me when I didn't think anyone could`,
-                person: 'From participant'
-            }, {
-                content: `I truly believe Eamonn helped save my son’s life. He helped my teenager at a time when I was unsure if anyone could. My son is now on his way to college and working at Chick-fil-A. I’m beyond grateful to Eam`,
-                person: 'From parent'
-            },
-        ]
-    })
+                name: 'Modality',
+                children: [
+                    {
+                        name: 'Individual',
+                        description: '',
+                        icon: 'mdi-account'
+                    }, {
+                        name: 'Group',
+                        description: '',
+                        icon: 'mdi-account-group'
+                    },
+                ]
+            }
+        ],
+
+    }),
+
 
 }
 </script>
 
 <style scoped>
+.w-full {
+    width: 100% !important;
+}
 
+@media (min-width: 960px) {
+    .w-md-half {
+        width: 50% !important;
+    }
+}
 </style>
+

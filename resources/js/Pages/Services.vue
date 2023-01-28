@@ -38,86 +38,99 @@
                 <v-row>
                     <v-col class="col-sm-6 col-md-4 col-lg-4 col-12"
                            v-for="(item,i) in services" :key="item.id">
-                        <inertia-link href="#"
-                                      class="text-decoration-none">
-                            <v-hover v-slot="{ hover }">
-                                <v-card class="pa-0">
-                                    <v-img cover
-                                           :aspect-ratio="1/1"
-                                           style="transition: all 0.5s;"
-                                           :class="hover ? 'zoom' : ''"
-                                           gradient="rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65), rgb(0, 0, 0)"
-                                           :src="item.src">
-                                        <template v-slot:placeholder>
-                                            <v-row
-                                                class="fill-height ma-0"
-                                                align="center"
-                                                justify="center"
-                                            >
-                                                <v-progress-circular
-                                                    indeterminate
-                                                    color="primary"
-                                                ></v-progress-circular>
-                                            </v-row>
-                                        </template>
-                                        <v-container class="fill-height d-flex justify-center align-end">
-                                            <p class="font-weight-bold accent--text text-h6">{{ item.name }}</p>
-                                        </v-container>
-                                    </v-img>
-                                </v-card>
 
-                            </v-hover>
-                        </inertia-link>
+                        <v-hover v-slot="{ hover }">
+                            <v-card class="pa-0 "
+                                    style="transition: all 0.5s;"
+                                    :class="hover ? 'mt-n5 mb-5 elevation-12' : ''">
+                                <v-img cover
+                                       :aspect-ratio="1/1"
+                                       style="transition: all 0.5s;"
+                                       :class="hover ? 'zoom' : ''"
+                                       gradient="rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65), rgb(0, 0, 0)"
+                                       :src="item.src">
+                                    <template v-slot:placeholder>
+                                        <v-row
+                                            class="fill-height ma-0"
+                                            align="center"
+                                            justify="center"
+                                        >
+                                            <v-progress-circular
+                                                indeterminate
+                                                color="primary"
+                                            ></v-progress-circular>
+                                        </v-row>
+                                    </template>
+                                    <v-container class="fill-height d-flex justify-center align-end">
+                                        <p class="font-weight-bold accent--text text-h6">{{ item.name }}</p>
+                                    </v-container>
+                                </v-img>
+                                <v-card-text class="text-justify" v-html="item.description">
+                                </v-card-text>
+                                <v-card-actions v-if="item.resources">
+                                    <v-subheader>
+                                        Resources
+                                    </v-subheader>
+                                    <a class="text-caption"
+                                       target="_blank"
+                                       :href="item.resources"
+                                       v-html="item.resources">
+                                    </a>
+                                </v-card-actions>
+                            </v-card>
+
+                        </v-hover>
+
                     </v-col>
                 </v-row>
             </v-container>
         </section>
 
-        <section>
-            <v-sheet class=" theme--light">
-                <v-container class=" py-4 py-lg-8">
-                    <v-row class="row">
+        <!--        <section>
+                    <v-sheet class=" theme&#45;&#45;light">
+                        <v-container class=" py-4 py-lg-8">
+                            <v-row class="row">
 
-                        <v-col v-for="item in services" :key="item.id" class="col-md-4 col-12">
-                            <v-hover v-slot="{ hover }">
-                                <v-card outlined class="" style="transition: all 0.5s;"
-                                        :class="hover ? 'mt-n5 mb-5 elevation-12' : ''">
-                                    <v-img :src="item.src"
-                                           style="height: 280px;transition: all 0.5s;"
-                                           cover
-                                           :aspect-ratio="16/9"
-                                           :class="hover ? 'zoom' : ''">
-                                        <template v-slot:placeholder>
-                                            <v-row
-                                                class="fill-height ma-0"
-                                                align="center"
-                                                justify="center"
-                                            >
-                                                <v-progress-circular
-                                                    indeterminate
-                                                    color="grey lighten-5"
-                                                ></v-progress-circular>
-                                            </v-row>
-                                        </template>
-                                    </v-img>
+                                <v-col v-for="item in services" :key="item.id" class="col-md-4 col-12">
+                                    <v-hover v-slot="{ hover }">
+                                        <v-card outlined class="" style="transition: all 0.5s;"
+                                                :class="hover ? 'mt-n5 mb-5 elevation-12' : ''">
+                                            <v-img :src="item.src"
+                                                   style="height: 280px;transition: all 0.5s;"
+                                                   cover
+                                                   :aspect-ratio="16/9"
+                                                   :class="hover ? 'zoom' : ''">
+                                                <template v-slot:placeholder>
+                                                    <v-row
+                                                        class="fill-height ma-0"
+                                                        align="center"
+                                                        justify="center"
+                                                    >
+                                                        <v-progress-circular
+                                                            indeterminate
+                                                            color="grey lighten-5"
+                                                        ></v-progress-circular>
+                                                    </v-row>
+                                                </template>
+                                            </v-img>
 
-                                    <v-responsive class="mx-auto text-center pa-4" style="max-width: 360px;">
-                                        <div class="text-h5 mt-5">{{ item.name }}</div>
-                                        <div class="text-h6 mt-5 text-justify">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Voluptatum commodi corrupti maiores ex sunt dolorum inventore facilis
-                                            reprehenderit ullam minima quaerat sit!
-                                        </div>
+                                            <v-responsive class="mx-auto text-center pa-4" style="max-width: 360px;">
+                                                <div class="text-h5 mt-5">{{ item.name }}</div>
+                                                <div class="text-h6 mt-5 text-justify">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Voluptatum commodi corrupti maiores ex sunt dolorum inventore facilis
+                                                    reprehenderit ullam minima quaerat sit!
+                                                </div>
 
-                                    </v-responsive>
-                                </v-card>
-                            </v-hover>
-                        </v-col>
+                                            </v-responsive>
+                                        </v-card>
+                                    </v-hover>
+                                </v-col>
 
-                    </v-row>
-                </v-container>
-            </v-sheet>
-        </section>
+                            </v-row>
+                        </v-container>
+                    </v-sheet>
+                </section>-->
 
         <section>
             <v-container class="py-4 py-lg-8">
@@ -238,7 +251,7 @@
 </template>
 
 <script>
-import appLayout from "@/Layouts/AppLayout";
+import appLayout from "@/Layouts/AppLayout.vue";
 
 import bg from '@/../images/free/pexels-kampus-production-5940841.jpg'
 
@@ -261,41 +274,47 @@ export default {
         bg,
         services: [
             {
-                name: "Specialized Training and Issues",
+                name: "Specialized Training",
+                description: 'Clinical supervision and training provided',
                 src: bg1
             },
             {
-                name: "Compassion Based Cognitive Behavioral Therapy",
-                src: bg2
+                name: "Cognitively-Based Compassion Training ",
+                description: ` CBCT (Cognitively-Based Compassion Training) is a system of contemplative exercises designed to strengthen and sustain compassion. Practices include training in attentional stability and increased emotional awareness, as well as targeted analytical reflections to understand better one’s relationship with self and others. The reflective exercises seek critical insights into the way one’s mindsets and attitudes can be shifted to support personal resiliency, to foster an inclusive and more accurate understanding of others, and ultimately to intensify altruistic motivation. With practice, informed compassion can become a spontaneous response that permeates one’s life.`,
+                src: bg2,
+                resources: 'https://compassion.emory.edu/cbct-compassion-training/index.html'
             },
             {
                 name: "Dialectical Behavior Therapy",
-                src: bg3
+                description: `Dialectical behavior therapy (DBT) is a type of talk therapy (psychotherapy). It’s based on Cognitive Behavior Therapy (CBT), but it’s specially adapted for people who experience emotions very intensely. <br>
+                Cognitive behavioral therapy (CBT) is a type of talk therapy that helps people understand how thoughts affect emotions and behaviors. <br>
+                “Dialectical” means combining opposite ideas. DBT focuses on helping people accept the reality of their lives and their behaviors, as well as helping them learn to change their lives, including their unhelpful behaviors. <br>
+                Dialectical behavior therapy was developed in the 1970s by Marsha Linehan, an American psychologist.`,
+                src: bg3,
+                resources: 'https://dialecticalbehaviortherapy.com/'
+
             },
+
             {
-                name: "Assessment and Treatment of Problematic Sexual Behaviors (and interacting with the courts)",
-                src: bg4
+                name: "Trauma-Focused Cognitive Behavioral Therapy (TF-CBT) ",
+                description: `TF-CBT is an evidence-based treatment approach shown to help children, adolescents, and their parents (or other caregivers) overcome trauma-related difficulties. It is designed to reduce negative emotional and behavioral responses following trauma, including child sexual abuse and other maltreatment, domestic violence, traumatic loss, mass disasters, multiple traumas, and other traumatic events`,
+                src: bg5,
+                resource: 'https://tfcbt.org/wp-content/uploads/2014/07/camh_502.pdf'
+
             },
-            {
-                name: "Trauma Focused Cognitive Behavior Therapy",
-                src: bg5
-            },
-            {
-                name: "Sexual Abuse Survivors",
-                src: bg6
-            },
+
             {
                 name: "Anger Management",
+                description: `12 week individual or group classes <br>
+                Anger management refers to a process. It can help people identify stressors. People learn steps to help them stay calm in anger management. They may then handle tense situations in a constructive, positive way. The purpose of anger management is to help a person decrease anger. It reduces the emotional and physical arousal that anger can cause. It is generally impossible to avoid all people and settings that incite anger. But a person may learn to control reactions and respond in a socially appropriate manner.`,
                 src: bg7
             },
             {
                 name: "Social Skills",
+                description: `12 week individual or group classes <br>
+                It can be tough out there in the social world. Not all kids naturally know the ins and outs of making and keeping friends, communicating effectively or navigating complex social situations. It’s similar to not being a natural at math or spelling. Some “subjects” come easily to some, and some “subjects” need extra attention, practice and training.`,
                 src: bg8
             },
-            {
-                name: "Anxiety Management",
-                src: bg9
-            }
         ],
         payBy: [
             {

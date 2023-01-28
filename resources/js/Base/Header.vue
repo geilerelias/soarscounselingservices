@@ -77,26 +77,26 @@
                 <btn-language></btn-language>
 
                 <!-- Settings Dropdown -->
-                <div v-if="$page.user !== null" class="text-center hidden-xs-only">
+                <div v-if="$page.props.user !== null" class="text-center hidden-xs-only">
                     <v-menu offset-y :close-on-content-click="false">
                         <!--                                <template v-slot:activator="{ on, attrs }">
                                                             <v-btn text
                                                                    v-bind="attrs"
                                                                    v-on="on"
                                                                    class="px-1 ml-2 mr-n2 rounded-pill">
-                                                                <v-avatar class="transparent" size="35" v-if="$page.jetstream.managesProfilePhotos">
-                                                                    <v-img cover :src="$page.user.profile_photo_url" :alt="$page.user.name"></v-img>
+                                                                <v-avatar class="transparent" size="35" v-if="$page.props.jetstream.managesProfilePhotos">
+                                                                    <v-img cover :src="$page.props.user.profile_photo_url" :alt="$page.props.user.name"></v-img>
                                                                 </v-avatar>
 
                                                                 <span
                                                                     class="text-none font-weight-regular ml-3 hidden-sm-and-down text-truncate"
-                                                                    style="max-width: 100px;">{{ $page.user.name }}</span>
+                                                                    style="max-width: 100px;">{{ $page.props.user.name }}</span>
                                                                 <v-icon>mdi-chevron-down</v-icon>
                                                             </v-btn>
                                                         </template> -->
                         <template v-slot:activator="{ on, attrs }">
                             <v-btn
-                                v-if="$page.jetstream.managesProfilePhotos"
+                                v-if="$page.props.jetstream.managesProfilePhotos"
                                 fab
                                 dark
                                 text
@@ -108,8 +108,8 @@
                                     style="max-height: 48px; max-width: 48px"
                                     class="rounded-circle"
                                     cover
-                                    :src="$page.user.profile_photo_url"
-                                    :alt="$page.user.name"
+                                    :src="$page.props.user.profile_photo_url"
+                                    :alt="$page.props.user.name"
                                 ></v-img>
                             </v-btn>
                         </template>
@@ -118,21 +118,21 @@
                             <v-list>
                                 <v-list-item>
                                     <v-list-item-avatar
-                                        v-if="$page.jetstream.managesProfilePhotos"
+                                        v-if="$page.props.jetstream.managesProfilePhotos"
                                     >
                                         <img
-                                            :src="$page.user.profile_photo_url"
-                                            :alt="$page.user.name"
+                                            :src="$page.props.user.profile_photo_url"
+                                            :alt="$page.props.user.name"
                                         />
                                     </v-list-item-avatar>
 
                                     <v-list-item-content>
                                         <v-list-item-title>{{
-                                                $page.user.name
+                                                $page.props.user.name
                                             }}
                                         </v-list-item-title>
                                         <v-list-item-subtitle>{{
-                                                $page.user.email
+                                                $page.props.user.email
                                             }}
                                         </v-list-item-subtitle>
                                     </v-list-item-content>
@@ -142,7 +142,7 @@
                             <v-divider></v-divider>
 
                             <!-- Responsive Settings Options -->
-                            <v-list v-if="$page.user !== null" dense>
+                            <v-list v-if="$page.props.user !== null" dense>
                                 <v-subheader>Settings Options</v-subheader>
                                 <v-list-item-group color="primary">
                                     <inertia-link :href="route('profile.show')">
@@ -167,7 +167,7 @@
                                     </inertia-link>
                                     <inertia-link
                                         :href="route('api-tokens.index')"
-                                        v-if="$page.jetstream.hasApiFeatures"
+                                        v-if="$page.props.jetstream.hasApiFeatures"
                                     >
                                         <v-list-item
                                             :dark="
@@ -195,7 +195,7 @@
                                         :href="
                                         route(
                                             'teams.show',
-                                            $page.user.current_team
+                                            $page.props.user.current_team
                                         )
                                     "
                                     >
@@ -247,13 +247,13 @@
                             </v-list>
 
                             <div
-                                v-if="$page.user !== null"
+                                v-if="$page.props.user !== null"
                                 class="pt-4 pb-1 border-t border-gray-200"
                             >
                                 <div class="mt-3 space-y-1">
                                     <!-- Team Management -->
                                     <template
-                                        v-if="$page.jetstream.hasTeamFeatures"
+                                        v-if="$page.props.jetstream.hasTeamFeatures"
                                     >
                                         <!-- Team Switcher -->
                                         <div
@@ -263,7 +263,7 @@
                                         </div>
 
                                         <template
-                                            v-for="team in $page.user.all_teams"
+                                            v-for="team in $page.props.user.all_teams"
                                         >
                                             <form
                                                 @submit.prevent="switchToTeam(team)"
@@ -276,7 +276,7 @@
                                                         <svg
                                                             v-if="
                                                             team.id ==
-                                                                $page.user
+                                                                $page.props.user
                                                                     .current_team_id
                                                         "
                                                             class="mr-2 h-5 w-5 text-green-400"
@@ -303,7 +303,7 @@
                     </v-menu>
                 </div>
 
-                <div class="text-center" v-if="$page.user == null">
+                <div class="text-center" v-if="$page.props.user == null">
                     <v-menu
                         :close-on-content-click="false"
                         :nudge-width="200"
@@ -320,7 +320,7 @@
 
                         <v-card>
                             <v-list>
-                                <template v-if="$page.user == null">
+                                <template v-if="$page.props.user == null">
                                     <v-subheader>Authentication</v-subheader>
                                     <v-divider></v-divider>
                                     <v-list-item
@@ -375,7 +375,7 @@
                                 v-for="item in links"
                                 :key="item.name"
                                 :href="route(item.route)"
-                                class="text-none v-btn v-btn--text theme--light v-size--default"
+                                class="text-decoration-none text-none v-btn v-btn--text theme--light v-size--default"
                                 :class="{
                                     'active primary--text  font-weight-bold':
                                     route().current(item.route) &&
@@ -428,12 +428,12 @@ import facebook from "@/../images/btns/facebook.png";
 
 import {mapMutations, mapState} from "vuex";
 
-import JetApplicationMark from "@/Jetstream/ApplicationMark";
-import JetDropdown from "@/Jetstream/Dropdown";
-import JetDropdownLink from "@/Jetstream/DropdownLink";
-import JetNavLink from "@/Jetstream/NavLink";
-import JetResponsiveNavLink from "@/Jetstream/ResponsiveNavLink";
-import BtnLanguage from "@/components/Language";
+import JetApplicationMark from "@/Jetstream/ApplicationMark.vue";
+import JetDropdown from "@/Jetstream/Dropdown.vue";
+import JetDropdownLink from "@/Jetstream/DropdownLink.vue";
+import JetNavLink from "@/Jetstream/NavLink.vue";
+import JetResponsiveNavLink from "@/Jetstream/ResponsiveNavLink.vue";
+import BtnLanguage from "@/components/Language.vue";
 
 
 export default {
