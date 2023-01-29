@@ -76,9 +76,11 @@ import appLayout from "@/Layouts/AppLayout.vue";
 import ImgEamonn from '@/../images/eamonn.jpg'
 import OurValues from "@/components/OurValues.vue";
 import MissionVision from "@/components/MissionVision.vue";
+import route from "ziggy-js/src/js";
 
 export default {
     name: "About",
+    methods: {route},
     components: {
         MissionVision,
         OurValues,
@@ -147,8 +149,6 @@ export default {
         ],
 
     }),
-
-
 }
 </script>
 
