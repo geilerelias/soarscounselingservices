@@ -15,17 +15,21 @@
     "file": "assets/eamonn-b54e14d2.jpg",
     "src": "resources/images/eamonn.jpg"
   },
-  "resources/images/free/ADOLESCENTE.jpg": {
-    "file": "assets/ADOLESCENTE-0b60bc0c.jpg",
-    "src": "resources/images/free/ADOLESCENTE.jpg"
-  },
   "resources/images/free/pexels-liza-summer-6382659.jpg": {
     "file": "assets/pexels-liza-summer-6382659-0d3aa436.jpg",
     "src": "resources/images/free/pexels-liza-summer-6382659.jpg"
   },
+  "resources/images/free/ADOLESCENTE.jpg": {
+    "file": "assets/ADOLESCENTE-0b60bc0c.jpg",
+    "src": "resources/images/free/ADOLESCENTE.jpg"
+  },
   "resources/images/testimonial.jpg": {
     "file": "assets/testimonial-67a1b3cd.jpg",
     "src": "resources/images/testimonial.jpg"
+  },
+  "resources/images/free/TERAPIA GRUPAL.jpg": {
+    "file": "assets/TERAPIA GRUPAL-80f050c2.jpg",
+    "src": "resources/images/free/TERAPIA GRUPAL.jpg"
   },
   "resources/images/free/pexels-shvets-production-7176298.jpg": {
     "file": "assets/pexels-shvets-production-7176298-86c5c4b4.jpg",
@@ -47,33 +51,9 @@
     "file": "assets/pexels-cottonbro-4100489-54606869.jpg",
     "src": "resources/images/free/pexels-cottonbro-4100489.jpg"
   },
-  "resources/images/free/TERAPIA GRUPAL.jpg": {
-    "file": "assets/TERAPIA GRUPAL-80f050c2.jpg",
-    "src": "resources/images/free/TERAPIA GRUPAL.jpg"
-  },
   "resources/images/logo/img2.png": {
     "file": "assets/img2-dd7486d1.png",
     "src": "resources/images/logo/img2.png"
-  },
-  "resources/images/logo/img1.png": {
-    "file": "assets/img1-fff8ebb0.png",
-    "src": "resources/images/logo/img1.png"
-  },
-  "resources/images/btns/whatsapp-nuevo.png": {
-    "file": "assets/whatsapp-nuevo-a470912a.png",
-    "src": "resources/images/btns/whatsapp-nuevo.png"
-  },
-  "resources/images/btns/tiktok-nuevo.png": {
-    "file": "assets/tiktok-nuevo-b5586dd9.png",
-    "src": "resources/images/btns/tiktok-nuevo.png"
-  },
-  "resources/images/btns/instagram-nuevo.png": {
-    "file": "assets/instagram-nuevo-2a681204.png",
-    "src": "resources/images/btns/instagram-nuevo.png"
-  },
-  "resources/images/btns/facebook-nuevo.png": {
-    "file": "assets/facebook-nuevo-a370e9eb.png",
-    "src": "resources/images/btns/facebook-nuevo.png"
   },
   "resources/images/logo/SOARS.png": {
     "file": "assets/SOARS-b086444d.png",
@@ -115,6 +95,26 @@
     "file": "assets/facebook-a2c7bb06.png",
     "src": "resources/images/btns/facebook.png"
   },
+  "resources/images/logo/img1.png": {
+    "file": "assets/img1-fff8ebb0.png",
+    "src": "resources/images/logo/img1.png"
+  },
+  "resources/images/btns/tiktok-nuevo.png": {
+    "file": "assets/tiktok-nuevo-b5586dd9.png",
+    "src": "resources/images/btns/tiktok-nuevo.png"
+  },
+  "resources/images/btns/whatsapp-nuevo.png": {
+    "file": "assets/whatsapp-nuevo-a470912a.png",
+    "src": "resources/images/btns/whatsapp-nuevo.png"
+  },
+  "resources/images/btns/instagram-nuevo.png": {
+    "file": "assets/instagram-nuevo-2a681204.png",
+    "src": "resources/images/btns/instagram-nuevo.png"
+  },
+  "resources/images/btns/facebook-nuevo.png": {
+    "file": "assets/facebook-nuevo-a370e9eb.png",
+    "src": "resources/images/btns/facebook-nuevo.png"
+  },
   "resources/images/pexels-brett-sayles-2310604.jpg": {
     "file": "assets/pexels-brett-sayles-2310604-d4fba472.jpg",
     "src": "resources/images/pexels-brett-sayles-2310604.jpg"
@@ -153,7 +153,7 @@
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
-    "file": "assets/app-7a3f70a7.js",
+    "file": "assets/app-59b0eddb.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
