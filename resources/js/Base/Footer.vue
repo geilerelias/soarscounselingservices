@@ -11,7 +11,7 @@
                     <div class="my-3 my-md-0">
                         <inertia-link v-for="item in links"
                                       :key="item.id"
-                                      :href="item.route"
+                                      :href="route(item.route)"
                                       class="text-decoration-none ml-md-4 primary--text"
                                       v-html="$t('links.'+item.title)">
                             {{ item.title }}
@@ -81,9 +81,11 @@ import tiktok from '@/../images/btns/tiktok-nuevo.png';
 import whatsapp from '@/../images/btns/whatsapp-nuevo.png'
 import instagram from '@/../images/btns/instagram-nuevo.png'
 import facebook from '@/../images/btns/facebook-nuevo.png'
+import route from "ziggy-js/src/js";
 
 export default {
     name: "Footer",
+    methods: {route},
     data: () => ({
         tiktok,
         whatsapp,

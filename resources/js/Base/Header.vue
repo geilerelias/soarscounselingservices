@@ -434,6 +434,7 @@ import JetDropdownLink from "@/Jetstream/DropdownLink.vue";
 import JetNavLink from "@/Jetstream/NavLink.vue";
 import JetResponsiveNavLink from "@/Jetstream/ResponsiveNavLink.vue";
 import BtnLanguage from "@/components/Language.vue";
+import route from "ziggy-js/src/js";
 
 
 export default {
@@ -455,8 +456,6 @@ export default {
             type: Boolean,
             default: false
         }
-    },
-    created() {
     },
     data: () => ({
         tiktok: tiktok,
@@ -505,6 +504,7 @@ export default {
         ])
     },
     methods: {
+        route,
         ...mapMutations(["setDrawer", "setSearch", "setPage", "setIdBusiness"]),
         toTop() {
             this.$vuetify.goTo(0);
