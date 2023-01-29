@@ -19,6 +19,7 @@ import vuetify from '../plugins/vuetify'
 
 //Ziggy Vue
 import {ZiggyVue} from '../../vendor/tightenco/ziggy/dist/vue.m';
+// import {Ziggy, ZiggyVue, route} from 'ziggy';
 
 //material design icons
 import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader

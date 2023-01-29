@@ -1,5 +1,6 @@
 <template>
     <app-layout>
+        <inertia-head :title="$t('links.services')"></inertia-head>
         <section id="about" style="transform-origin: center top 0px;">
             <v-row class="no-gutters">
                 <v-col class="col col-12">
@@ -206,15 +207,15 @@
                     <v-divider class="primary mx-auto mb-2  theme--light" style="max-width: 28px;"></v-divider>
                 </div>
 
-                <div class="v-sheet theme--light">
-                    <div class="container text-center">
+                <v-sheet>
+                    <v-container class="text-center">
                         <div class="text-body-1 text-uppercase font-weight-bold">
                             {{ $t("services.trusted_by_the_best_in_the_business") }}
                         </div>
                         <div class="my-4">
                             <v-row dense>
                                 <v-col v-for="item in payBy" :key="item.id"
-                                       class="col-sm-6 col-md-4 col-12 text-center d-flex justify-space-around">
+                                       class="col-md-4 col-6 text-center d-flex justify-space-around">
                                     <a href="#">
                                         <v-sheet class="grey lighten-4 text-center rounded-lg"
                                                  style="max-width:120px;width:120px">
@@ -241,8 +242,8 @@
 
                             </v-row>
                         </div>
-                    </div>
-                </div>
+                    </v-container>
+                </v-sheet>
 
             </v-container>
         </section>

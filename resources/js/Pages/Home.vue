@@ -1,5 +1,6 @@
 <template>
     <app-layout>
+        <inertia-head :title="$t('links.home')"></inertia-head>
         <section>
             <v-container class="mt-10">
                 <v-row>
@@ -9,15 +10,7 @@
                         </h1>
 
                         <h2 class="text-subtitle-1 text-sm-body-1 mt-4 text-justify">
-                            I was born in London of Irish parents. Before coming to the United States I worked as a
-                            social worker in a variety of settings. I worked as a Community Social Worker and as a front
-                            line residential staff in a group home for troubled boys and also for adults with mental
-                            illness. When I came to the United Sates I worked as a Job Coach finding jobs for adults
-                            with mental illness. I also worked as a Social Worker for the elderly in Washington DC.
-                            After this I became a therapist and have been providing therapy to adolescents for over 2O
-                            years. In my free time I enjoy watching (Atlanta United!) and playing soccer and riding my
-                            motorcycle. I believe and work at developing strong rapport with all of my clients. I have a
-                            warm non-judgmental, supportive approach. I provide individual and group therapy.
+                            {{ $t('home.about_me') }}
                         </h2>
                     </v-col>
                     <v-col class="d-none d-md-block col-md-6 col-lg-5 col-12">
@@ -36,7 +29,7 @@
             <v-sheet v-for="item in information" :key="item.id" class="my-12">
                 <div class="text-left">
                     <h1 class="text-h6 text-lg-h5 text-uppercase font-weight-black mb-2 ">
-                        {{ item.name }}
+                        {{ $t('home.' + item.name) }}
                     </h1>
 
                     <v-divider class="primary mb-2  theme--light" style="max-width: 28px;"></v-divider>
@@ -91,7 +84,7 @@ export default {
         ImgEamonn,
         information: [
             {
-                name: 'Qualifications',
+                name: 'qualifications',
                 children: [
                     {
                         name: 'Bachelors in Social Anthropology',
@@ -107,7 +100,7 @@ export default {
                     },
                 ]
             }, {
-                name: 'License and State',
+                name: 'license_and_state',
                 children: [
                     {
                         name: 'Licensed Clinical Social Worker Georgia CSW002273',
@@ -116,7 +109,7 @@ export default {
                     },
                 ]
             }, {
-                name: 'Years in Practice',
+                name: 'years_in_practice',
                 children: [
                     {
                         name: '20 Years',
@@ -125,7 +118,7 @@ export default {
                     },
                 ]
             }, {
-                name: 'Client Focus',
+                name: 'client_focus',
                 children: [
                     {
                         name: 'Adolescents 13-18',
@@ -134,7 +127,7 @@ export default {
                     },
                 ]
             }, {
-                name: 'Modality',
+                name: 'modality',
                 children: [
                     {
                         name: 'Individual',

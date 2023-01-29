@@ -1,5 +1,6 @@
 <template>
     <app-layout>
+        <inertia-head :title="$t('links.testimonial')"></inertia-head>
         <section id="about" style="transform-origin: center top 0px;">
             <v-row class="no-gutters">
                 <v-col class="col col-12">

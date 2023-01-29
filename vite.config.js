@@ -5,7 +5,9 @@ import vue from '@vitejs/plugin-vue2';
 export default defineConfig({
     resolve: {
         alias: {
-            '@': '/resources/js'
+            '@': '/resources/js',
+            'ziggy': '/vendor/tightenco/ziggy/src/js',
+            'ziggy-vue': '/vendor/tightenco/ziggy/dist/vue.m',
         }
     },
     plugins: [

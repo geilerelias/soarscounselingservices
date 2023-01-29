@@ -33,8 +33,14 @@
     },
     "home": {
         "learn_more": "Saber más",
+        "about_me": "Nací en Londres de padres irlandeses. Antes de venir a los Estados Unidos trabajé como\n trabajador social en una variedad de entornos. Trabajé como trabajador social comunitario y como personal residencial de primera línea en un hogar grupal para niños con problemas y también para adultos con enfermedades mentales\n. Cuando llegué a los Estados Unidos, trabajé como entrenador laboral encontrando trabajos para adultos\n con enfermedades mentales. También trabajé como trabajador social para personas mayores en Washington DC.\n Después de esto, me convertí en terapeuta y he brindado terapia a adolescentes durante más de 2O\n años. En mi tiempo libre, disfruto viendo (¡Atlanta United!), jugar fútbol y andar en mi motocicleta. y trabajo para desarrollar una relación sólida con todos mis clientes. Tengo un enfoque cálido, sin prejuicios y de apoyo. Proporciono terapia individual y grupal",
         "testimonials": "Testimonios",
-        "what_our_customers_are_saying": "Lo que dicen nuestros clientes"
+        "what_our_customers_are_saying": "Lo que dicen nuestros clientes",
+        "qualifications": "Calificaciones",
+        "license_and_state": "Licencia y Estado",
+        "years_in_practice": "Años en la práctica",
+        "client_focus": "Enfoque en el cliente",
+        "modality": "Modalidad"
     },
     "services": {
         "our-services": "Nuestros servicios.",
@@ -53,5 +59,15 @@
         "cash_app": "Cash App",
         "venmo": "Venmo",
         "zelle": "Zelle"
+    },
+    "contact": {
+        "keep_in_touch_with_us": "Mantente en contacto con nosotros",
+        "message": "Si quieres saber mas de lo que hago y como puedo ayudarte, no dudes en escribirme a mis correos electrónicos o llamar a al numero telefónicos que tengo disponible para ti. Para mi es un placer poder servirte.",
+        "send_us_your_message": "Envíanos tu mensaje",
+        "name": "Nombre",
+        "email": "Email",
+        "subject": "Asunto",
+        "content": "Contenido",
+        "send": "Enviar"
     }
 }

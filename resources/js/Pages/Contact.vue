@@ -1,5 +1,6 @@
 <template>
     <app-layout>
+        <inertia-head :title="$t('links.contact')"></inertia-head>
         <section id="about" style="transform-origin: center top 0px;">
             <v-row class="no-gutters">
                 <v-col class="col col-12">
@@ -14,16 +15,15 @@
                                 <v-col class="col col-12">
                                     <h1
                                         class="text-h3 font-weight-500 mb-2 text-center white--text">
-                                        CONTACT
+                                        {{ $t('links.contact') }}
                                     </h1>
                                     <v-responsive class="primary mx-auto mb-6"
                                                   style="max-width: 28px;">
                                         <v-divider aria-orientation="horizontal"/>
                                     </v-responsive>
 
-                                    <v-breadcrumbs dark class="justify-center pa-0 text--primary"
+                                    <v-breadcrumbs dark class="justify-center pa-0 text--primary "
                                                    :items="items"
-                                                   divider="/"
                                     ></v-breadcrumbs>
                                 </v-col>
                             </v-row>
@@ -44,19 +44,13 @@
                                     <v-col class="col-12">
                                         <h3
                                             class="text-uppercase text-h6 font-weight-bold mb-1 text-left">
-                                            KEEP IN TOUCH WITH US
+                                            {{ $t('contact.keep_in_touch_with_us') }}
                                         </h3>
-                                        <v-responsive class=" base-divider primary mr-auto mb-6"
-                                                      style="max-width: 28px;">
-                                            <v-divider role="separator"
-                                                       aria-orientation="horizontal"
-                                                       class="subject--light"/>
+                                        <v-responsive class=" primary mr-auto mb-6" style="max-width: 28px;">
+                                            <v-divider/>
                                         </v-responsive>
                                         <p class="justify-text base-body text-body-1 grey--text text--darken-1 text-justify mb-6">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deleniti
-                                            dicta dolore dolorum eligendi ex facere labore laboriosam non, pariatur,
-                                            provident quis quod sapiente sint, sit suscipit totam veniam!
-                                            Exercitationem?
+                                            {{ $t('contact.message') }}
                                         </p>
                                     </v-col>
                                 </v-row>
@@ -129,15 +123,11 @@
                                     <v-col class="col col-12">
                                         <h3
                                             class="text-uppercase text-h6 font-weight-bold mb-1 text-left">
-                                            SEND US YOUR MESSAGE
+                                            {{ $t('contact.send_us_your_message') }}
                                         </h3>
-                                        <div class="v-responsive base-divider primary mr-auto mb-6"
-                                             style="max-width: 28px;">
-                                            <div class="v-responsive__content">
-                                                <hr role="separator" aria-orientation="horizontal"
-                                                    class="v-divider subject--light">
-                                            </div>
-                                        </div>
+                                        <v-responsive class=" primary mr-auto mb-6" style="max-width: 28px;">
+                                            <v-divider/>
+                                        </v-responsive>
                                     </v-col>
                                 </v-row>
                             </v-container>
@@ -148,7 +138,7 @@
                                 :lazy-validation="false">
                                 <v-text-field
                                     outlined
-                                    label="Name"
+                                    :label="$t('contact.name')"
                                     v-model="mail.name"
                                     :rules="nameRules"
 
@@ -156,14 +146,14 @@
 
                                 <v-text-field
                                     outlined
-                                    label="Email"
+                                    :label="$t('contact.email')"
                                     v-model="mail.email"
                                     :rules="emailRules"
                                 ></v-text-field>
 
                                 <v-text-field
                                     outlined
-                                    label="Subject"
+                                    :label="$t('contact.subject')"
                                     v-model="mail.subject"
                                     :rules="subjectRules"
                                 ></v-text-field>
@@ -171,12 +161,13 @@
                                 <v-textarea
                                     outlined
                                     label="Content"
+                                    :label="$t('contact.content')"
                                     v-model="mail.content"
                                     :rules="contentRules"
                                 ></v-textarea>
 
                                 <v-btn class="font-weight-bold white--text primary" @click="send(mail)">
-                                    Send
+                                    {{ $t('contact.send') }}
                                 </v-btn>
                             </v-form>
                         </div>
@@ -232,14 +223,14 @@ export default {
         response: "",
         items: [
             {
-                text: 'INICIO',
+                text: 'Home',
                 disabled: false,
                 href: '/',
             },
             {
-                text: 'CONTACTANOS',
+                text: 'Contact',
                 disabled: true,
-                href: '/cotact-us',
+                href: '/contact',
             },
         ],
         mail: {name: "", email: "", subject: "", content: ""},
