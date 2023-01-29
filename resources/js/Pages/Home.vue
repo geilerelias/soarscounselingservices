@@ -80,7 +80,6 @@ import route from "ziggy-js/src/js";
 
 export default {
     name: "About",
-    methods: {route},
     components: {
         MissionVision,
         OurValues,
