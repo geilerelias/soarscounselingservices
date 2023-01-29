@@ -2,6 +2,7 @@
     <app-layout>
         <inertia-head :title="$t('links.home')"></inertia-head>
         <section>
+
             <v-container class="mt-10">
                 <v-row>
                     <v-col class="col-md-6 col-lg-7 col-12">
@@ -25,6 +26,9 @@
 
         </section>
 
+        <v-card>
+            {{ route().current() }}
+        </v-card>
         <v-container>
             <v-sheet v-for="item in information" :key="item.id" class="my-12">
                 <div class="text-left">
