@@ -41,3 +41,6 @@ Route::get('/services', function () {
 Route::get('/contact', function () {
     return Inertia\Inertia::render('Contact');
 })->name('contact');
+
+//send mail contact
+Route::post('/send-mail', [\App\Http\Controllers\MessageContactController::class, 'send'])->name('send-email');

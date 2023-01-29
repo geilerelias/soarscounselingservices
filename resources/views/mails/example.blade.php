@@ -1,0 +1,3 @@
+<div>
+    example: {{ $content }}
+</div>

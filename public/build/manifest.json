@@ -15,65 +15,69 @@
     "file": "assets/eamonn-b54e14d2.jpg",
     "src": "resources/images/eamonn.jpg"
   },
-  "resources/images/free/pexels-liza-summer-6382659.jpg": {
-    "file": "assets/pexels-liza-summer-6382659-0d3aa436.jpg",
-    "src": "resources/images/free/pexels-liza-summer-6382659.jpg"
-  },
   "resources/images/free/ADOLESCENTE.jpg": {
     "file": "assets/ADOLESCENTE-0b60bc0c.jpg",
     "src": "resources/images/free/ADOLESCENTE.jpg"
   },
-  "resources/images/free/TERAPIA GRUPAL.jpg": {
-    "file": "assets/TERAPIA GRUPAL-80f050c2.jpg",
-    "src": "resources/images/free/TERAPIA GRUPAL.jpg"
+  "resources/images/free/pexels-liza-summer-6382659.jpg": {
+    "file": "assets/pexels-liza-summer-6382659-0d3aa436.jpg",
+    "src": "resources/images/free/pexels-liza-summer-6382659.jpg"
   },
   "resources/images/testimonial.jpg": {
     "file": "assets/testimonial-67a1b3cd.jpg",
     "src": "resources/images/testimonial.jpg"
   },
-  "resources/images/free/ADOLESCENTE 4.jpg": {
-    "file": "assets/ADOLESCENTE 4-10ebd5e6.jpg",
-    "src": "resources/images/free/ADOLESCENTE 4.jpg"
-  },
-  "resources/images/free/pexels-cottonbro-4100489.jpg": {
-    "file": "assets/pexels-cottonbro-4100489-54606869.jpg",
-    "src": "resources/images/free/pexels-cottonbro-4100489.jpg"
+  "resources/images/free/TERAPIA GRUPAL.jpg": {
+    "file": "assets/TERAPIA GRUPAL-80f050c2.jpg",
+    "src": "resources/images/free/TERAPIA GRUPAL.jpg"
   },
   "resources/images/free/pexels-shvets-production-7176298.jpg": {
     "file": "assets/pexels-shvets-production-7176298-86c5c4b4.jpg",
     "src": "resources/images/free/pexels-shvets-production-7176298.jpg"
   },
-  "resources/images/free/TERAPIA FAMILIAR.jpg": {
-    "file": "assets/TERAPIA FAMILIAR-f5ada3c0.jpg",
-    "src": "resources/images/free/TERAPIA FAMILIAR.jpg"
-  },
   "resources/images/free/TERAPIA FAMILIAR EXCELENTE.jpg": {
     "file": "assets/TERAPIA FAMILIAR EXCELENTE-b5f7bdf0.jpg",
     "src": "resources/images/free/TERAPIA FAMILIAR EXCELENTE.jpg"
   },
-  "resources/images/logo/img1.png": {
-    "file": "assets/img1-fff8ebb0.png",
-    "src": "resources/images/logo/img1.png"
+  "resources/images/free/ADOLESCENTE 4.jpg": {
+    "file": "assets/ADOLESCENTE 4-10ebd5e6.jpg",
+    "src": "resources/images/free/ADOLESCENTE 4.jpg"
   },
-  "resources/images/btns/whatsapp-nuevo.png": {
-    "file": "assets/whatsapp-nuevo-a470912a.png",
-    "src": "resources/images/btns/whatsapp-nuevo.png"
+  "resources/images/free/TERAPIA FAMILIAR.jpg": {
+    "file": "assets/TERAPIA FAMILIAR-f5ada3c0.jpg",
+    "src": "resources/images/free/TERAPIA FAMILIAR.jpg"
+  },
+  "resources/images/free/pexels-cottonbro-4100489.jpg": {
+    "file": "assets/pexels-cottonbro-4100489-54606869.jpg",
+    "src": "resources/images/free/pexels-cottonbro-4100489.jpg"
   },
   "resources/images/logo/img2.png": {
     "file": "assets/img2-dd7486d1.png",
     "src": "resources/images/logo/img2.png"
   },
-  "resources/images/btns/tiktok-nuevo.png": {
-    "file": "assets/tiktok-nuevo-b5586dd9.png",
-    "src": "resources/images/btns/tiktok-nuevo.png"
+  "resources/images/logo/img1.png": {
+    "file": "assets/img1-fff8ebb0.png",
+    "src": "resources/images/logo/img1.png"
   },
   "resources/images/btns/instagram-nuevo.png": {
     "file": "assets/instagram-nuevo-2a681204.png",
     "src": "resources/images/btns/instagram-nuevo.png"
   },
+  "resources/images/btns/tiktok-nuevo.png": {
+    "file": "assets/tiktok-nuevo-b5586dd9.png",
+    "src": "resources/images/btns/tiktok-nuevo.png"
+  },
+  "resources/images/btns/whatsapp-nuevo.png": {
+    "file": "assets/whatsapp-nuevo-a470912a.png",
+    "src": "resources/images/btns/whatsapp-nuevo.png"
+  },
   "resources/images/btns/facebook-nuevo.png": {
     "file": "assets/facebook-nuevo-a370e9eb.png",
     "src": "resources/images/btns/facebook-nuevo.png"
+  },
+  "resources/images/logo/SOARS.png": {
+    "file": "assets/SOARS-b086444d.png",
+    "src": "resources/images/logo/SOARS.png"
   },
   "resources/images/btns/tiktok.png": {
     "file": "assets/tiktok-ab81b731.png",
@@ -95,17 +99,13 @@
     "file": "assets/messenger-cad60860.png",
     "src": "resources/images/btns/messenger.png"
   },
-  "resources/images/logo/SOARS.png": {
-    "file": "assets/SOARS-b086444d.png",
-    "src": "resources/images/logo/SOARS.png"
+  "resources/images/btns/llamada.png": {
+    "file": "assets/llamada-4658d553.png",
+    "src": "resources/images/btns/llamada.png"
   },
   "resources/images/btns/instagram.png": {
     "file": "assets/instagram-553c2fdc.png",
     "src": "resources/images/btns/instagram.png"
-  },
-  "resources/images/btns/llamada.png": {
-    "file": "assets/llamada-4658d553.png",
-    "src": "resources/images/btns/llamada.png"
   },
   "resources/images/btns/gmail.png": {
     "file": "assets/gmail-6ece57aa.png",
@@ -119,13 +119,13 @@
     "file": "assets/pexels-brett-sayles-2310604-d4fba472.jpg",
     "src": "resources/images/pexels-brett-sayles-2310604.jpg"
   },
-  "resources/images/flags/en-flag.png": {
-    "file": "assets/en-flag-16d2af8d.png",
-    "src": "resources/images/flags/en-flag.png"
-  },
   "resources/images/flags/es-flag.png": {
     "file": "assets/es-flag-40d2475d.png",
     "src": "resources/images/flags/es-flag.png"
+  },
+  "resources/images/flags/en-flag.png": {
+    "file": "assets/en-flag-16d2af8d.png",
+    "src": "resources/images/flags/en-flag.png"
   },
   "node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot": {
     "file": "assets/materialdesignicons-webfont-5be9e9d7.eot",
@@ -153,7 +153,7 @@
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
-    "file": "assets/app-5e5ce4d9.js",
+    "file": "assets/app-86c84a6f.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [

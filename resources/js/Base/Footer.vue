@@ -57,9 +57,9 @@
                         </a>
                         <br>
                         <a
-                            href="mailto:contacto@soarscounselingservices.com <contacto@soarscounselingservices.com>;"
+                            href="mailto:contact@soarscounselingservices.com <contact@soarscounselingservices.com>;"
                             class="text-decoration-none text--primary">
-                            contacto@soarscounselingservices.com
+                            contact@soarscounselingservices.com
                         </a>
                     </div>
                 </div>

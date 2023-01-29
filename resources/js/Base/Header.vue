@@ -55,13 +55,13 @@
                 <v-app-bar-title class="pa-0">
                     <div class=""
                          :style="flat &&$vuetify.breakpoint.mdAndUp?
-                                'max-height: 80px;max-width: 300px;height: 80px;width: 300px;'
+                                'max-height: 80px;max-width: 400px;height: 80px;width: 400px;'
                                 :'max-height: 40px;max-width: 200px;height: 40px;width: 200px;'">
-                        <inertia-link :href="route('home')" class="h-full d-flex justify-end align-end pa-0">
+                        <inertia-link :href="route('home')" class="h-full  pa-0">
                             <v-img
-                                class="mt-4"
+                                class=""
                                 :style="flat && $vuetify.breakpoint.mdAndUp?
-                                'max-height: 80px;max-width: 300px;height: 80px;width: 300px;'
+                                'max-height: 80px;max-width: 250px;height: 80px;width: 250px;'
                                 :'max-height: 40px;max-width: 200px;height: 40px;width: 200px;'"
                                 :spect-ratio="5/4"
                                 contain
@@ -128,11 +128,11 @@
 
                                     <v-list-item-content>
                                         <v-list-item-title>{{
-                                                $page.props.user.name
+                                            $page.props.user.name
                                             }}
                                         </v-list-item-title>
                                         <v-list-item-subtitle>{{
-                                                $page.props.user.email
+                                            $page.props.user.email
                                             }}
                                         </v-list-item-subtitle>
                                     </v-list-item-content>
@@ -303,47 +303,49 @@
                     </v-menu>
                 </div>
 
-                <div class="text-center" v-if="$page.props.user == null">
-                    <v-menu
-                        :close-on-content-click="false"
-                        :nudge-width="200"
-                        offset-y
-                    >
-                        <template v-slot:activator="{ on, attrs }">
-                            <v-app-bar-nav-icon
-                                v-bind="attrs"
-                                v-on="on"
-                                class="ml-2 hidden-sm-and-down"
-                            >
-                            </v-app-bar-nav-icon>
-                        </template>
-
-                        <v-card>
-                            <v-list>
-                                <template v-if="$page.props.user == null">
-                                    <v-subheader>Authentication</v-subheader>
-                                    <v-divider></v-divider>
-                                    <v-list-item
-                                        v-for="item in items"
-                                        :key="item.title"
-                                        :href="item.route"
+                <!--
+                                <div class="text-center" v-if="$page.props.user == null">
+                                    <v-menu
+                                        :close-on-content-click="false"
+                                        :nudge-width="200"
+                                        offset-y
                                     >
-                                        <v-list-item-icon>
-                                            <v-icon>{{ item.icon }}</v-icon>
-                                        </v-list-item-icon>
+                                        <template v-slot:activator="{ on, attrs }">
+                                            <v-app-bar-nav-icon
+                                                v-bind="attrs"
+                                                v-on="on"
+                                                class="ml-2 hidden-sm-and-down"
+                                            >
+                                            </v-app-bar-nav-icon>
+                                        </template>
 
-                                        <v-list-item-content>
-                                            <v-list-item-title>{{
-                                                    item.title
-                                                }}
-                                            </v-list-item-title>
-                                        </v-list-item-content>
-                                    </v-list-item>
-                                </template>
-                            </v-list>
-                        </v-card>
-                    </v-menu>
-                </div>
+                                        <v-card>
+                                            <v-list>
+                                                <template v-if="$page.props.user == null">
+                                                    <v-subheader>Authentication</v-subheader>
+                                                    <v-divider></v-divider>
+                                                    <v-list-item
+                                                        v-for="item in items"
+                                                        :key="item.title"
+                                                        :href="item.route"
+                                                    >
+                                                        <v-list-item-icon>
+                                                            <v-icon>{{ item.icon }}</v-icon>
+                                                        </v-list-item-icon>
+
+                                                        <v-list-item-content>
+                                                            <v-list-item-title>{{
+                                                                    item.title
+                                                                }}
+                                                            </v-list-item-title>
+                                                        </v-list-item-content>
+                                                    </v-list-item>
+                                                </template>
+                                            </v-list>
+                                        </v-card>
+                                    </v-menu>
+                                </div>
+                -->
 
                 <v-app-bar-nav-icon
                     class="hidden-md-and-up"

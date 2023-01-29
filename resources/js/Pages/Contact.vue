@@ -110,6 +110,11 @@
                                             class="text-body-1 grey--text text--darken-1 mb-0">
                                             soarsatlanta@yahoo.com
                                         </a>
+                                        <a
+                                            href="mailto:contact@soarscounselingservices.com <contact@soarscounselingservices.com>;"
+                                            class="text-body-1 grey--text text--darken-1 mb-0">
+                                            contact@soarscounselingservices.com
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -193,12 +198,18 @@
             <v-progress-circular indeterminate size="64"></v-progress-circular>
         </v-overlay>
 
-        <v-snackbar v-model="snackbar">
+        <v-snackbar v-model="snackbar"
+                    right
+                    shaped
+                    top
+                    outlined
+                    color="primary">
             {{ response }}
             <v-btn
-                color="pink"
+                color="secondary"
                 text
                 @click="snackbar = false"
+
             >
                 <v-icon>
                     mdi-close-outline
@@ -263,6 +274,7 @@ export default {
             } else {
                 this.overlay = true;
                 const newMail = this.mail;
+                console.log(newMail)
                 axios
                     .post("/send-mail", newMail)
                     .then(res => {
