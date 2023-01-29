@@ -26,9 +26,6 @@
 
         </section>
 
-        <v-card>
-            {{ route().current() }}
-        </v-card>
         <v-container>
             <v-sheet v-for="item in information" :key="item.id" class="my-12">
                 <div class="text-left">

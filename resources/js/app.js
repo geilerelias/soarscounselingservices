@@ -19,7 +19,6 @@ import vuetify from '../plugins/vuetify'
 
 //Ziggy Vue
 import {ZiggyVue} from '../../vendor/tightenco/ziggy/dist/vue.m';
-import {Ziggy} from './ziggy';
 // import {Ziggy, ZiggyVue, route} from 'ziggy';
 
 //material design icons
