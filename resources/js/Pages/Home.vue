@@ -4,7 +4,7 @@
         <section>
 
             <v-container class="mt-10">
-                <v-row>
+                <v-row class="flex-md-row flex-sm-column-reverse">
                     <v-col class="col-md-6 col-lg-7 col-12">
                         <h1 class="primary--text text-h5 text-sm-h4 text-lg-h3 mt-xl-4 font-weight-bold font-weight-bold">
                             Eamonn Walsh, LCSW
@@ -14,7 +14,7 @@
                             {{ $t('home.about_me') }}
                         </h2>
                     </v-col>
-                    <v-col class="d-none d-md-block col-md-6 col-lg-5 col-12">
+                    <v-col class=" col-md-6 col-lg-5 col-12 ">
                         <v-card outlined class="rounded-lg">
                             <v-img :src="ImgEamonn" class="rounded-lg" cover outline>
 
@@ -62,9 +62,9 @@
             </v-sheet>
         </v-container>
 
-        <MissionVision/>
+        <!--        <MissionVision/>
 
-        <OurValues/>
+                <OurValues/>-->
     </app-layout>
 </template>
 

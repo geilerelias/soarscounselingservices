@@ -22,7 +22,7 @@ const store = new Vuex.Store({
         links: [
             {title: "home", icon: 'mdi-home', route: "home"},
             {title: "services", icon: 'mdi-railroad-light', route: "services"},
-            {title: "testimonial", icon: 'mdi-railroad-light', route: "testimonial"},
+            {title: "testimonial", icon: 'mdi-account-voice', route: "testimonial"},
             {title: "contact", icon: 'mdi-card-account-phone', route: "contact"},
             // {title: "Galería", icon: 'mdi-play-box-multiple', route: "gallery"},
         ],
