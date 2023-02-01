@@ -70,6 +70,8 @@
                                         <p class="base-body text-body-1 mx-auto grey--text text--darken-1 text-left mb-0"
                                            style="max-width: 700px;">
                                             320 Town Center Ave | Suite C-11 #506
+                                            <br>
+                                            Suwanee, Georgia 3004, USA
                                         </p>
                                     </div>
                                 </div>

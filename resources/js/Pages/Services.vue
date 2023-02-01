@@ -159,7 +159,7 @@
                         <div class="d-flex justify-center">
                             <div class="font-weight-bold text-h5">$</div>
                             <div class="text-h2">
-                                95
+                                85
                             </div>
                         </div>
                         <div class="my-6 text-h6">
@@ -209,9 +209,7 @@
 
                 <v-sheet>
                     <v-container class="text-center">
-                        <div class="text-body-1 text-uppercase font-weight-bold">
-                            {{ $t("services.trusted_by_the_best_in_the_business") }}
-                        </div>
+
                         <div class="my-4">
                             <v-row dense>
                                 <v-col v-for="item in payBy" :key="item.id"
@@ -275,6 +273,10 @@ export default {
         bg,
         services: [
             {
+                name: " Assessment and Treatment of Problematic Sexual Behaviors",
+                description: 'SOARS provides Psychosocial Risk Factor assessments for adolescents who are involved with the legal system and for those who are not.  The assessment will provide clear recommendations for treatment and supervision.  SOARS staff can help navigate the teenager and his family through the legal system by interaction with the courts and attorneys.  SOARS can also provide treatment for problematic sexual behaviors.',
+                src: bg4
+            }, {
                 name: "Specialized Training",
                 description: 'Clinical supervision and training provided',
                 src: bg1

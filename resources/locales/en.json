@@ -31,6 +31,7 @@
         "INTEGRAL_SERVICES_DESCRIPTION": "At SOARS you will find comprehensive services according to your needs and personality, providing care to individuals and families seeking well-being and change."
     },
     "home": {
+        "greeting": "Hi! Thank you for visiting my website",
         "about_me": "I was born in London of Irish parents. Before coming to the United States I worked as a\n                            social worker in a variety of settings. I worked as a Community Social Worker and as a front\n                            line residential staff in a group home for troubled boys and also for adults with mental\n                            illness. When I came to the United Sates I worked as a Job Coach finding jobs for adults\n                            with mental illness. I also worked as a Social Worker for the elderly in Washington DC.\n                            After this I became a therapist and have been providing therapy to adolescents for over 2O\n                            years. In my free time I enjoy watching (Atlanta United!) and playing soccer and riding my\n                            motorcycle. I believe and work at developing strong rapport with all of my clients. I have a\n                            warm non-judgmental, supportive approach. I provide individual and group therapy.",
         "learn_more": "Learn more",
         "testimonials": "Testimonials",
@@ -61,7 +62,7 @@
     },
     "contact": {
         "keep_in_touch_with_us": "keep in touch with us",
-        "message": "If you want to know more about what I do and how I can help you, do not hesitate to write to my emails or call the telephone number that I have available for you. It is my pleasure to serve you.",
+        "message": "If you want to know more about what I do and how I can help you, do not hesitate to write to my e-mail or call the telephone number that I have available for you. It is my pleasure to serve you.",
         "send_us_your_message": "Send us your message",
         "name": "Name",
         "email": "Email",

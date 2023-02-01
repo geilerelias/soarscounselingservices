@@ -2,7 +2,7 @@
     <v-footer>
         <v-container>
             <div class="d-flex flex-column flex-md-row align-center justify-md-space-between mb-4">
-                <div class="d-flex flex-column flex-md-row align-center">
+                <div class="d-flex flex-column flex-md-row justify-md-space-between align-center">
                     <div class="d-flex align-center flex-column">
                         <v-img max-width="160" style="max-height:160px" :spect-ratio="5/4" contain :src="logo"/>
                         <v-img max-width="150" style="max-height:150px" :spect-ratio="16/9" contain :src="eslogan"/>
@@ -19,21 +19,21 @@
                     </div>
 
                 </div>
-                <div>
-                    <div class=" d-flex text-center justify-end align-center text-md-right mt-4 mt-lg-2">
+                <!--                <div>
+                                    <div class=" d-flex text-center justify-end align-center text-md-right mt-4 mt-lg-2">
 
-                        {{ $t('footer.connect') }}
+                                        {{ $t('footer.connect') }}
 
-                        <v-btn v-for="item in socialmedia" :key="item.id"
-                               icon
-                               height="30" width="30"
-                               min-width="30"
-                               class="ml-2"
-                               :href="item.link" target="_blank">
-                            <span v-html="item.src"></span>
-                        </v-btn>
-                    </div>
-                </div>
+                                        <v-btn v-for="item in socialmedia" :key="item.id"
+                                               icon
+                                               height="30" width="30"
+                                               min-width="30"
+                                               class="ml-2"
+                                               :href="item.link" target="_blank">
+                                            <span v-html="item.src"></span>
+                                        </v-btn>
+                                    </div>
+                                </div>-->
             </div>
             <v-divider class="my-3  theme--light"/>
             <div class="d-flex flex-column flex-md-row align-center justify-md-space-between body-2">
@@ -43,6 +43,8 @@
                         mdi-map-marker-outline
                     </v-icon>
                     320 Town Center Ave | Suite C-11 #506
+                    <br>
+                    Suwanee, Georgia 3004, USA
                 </div>
                 <div class="d-flex">
                     <v-icon

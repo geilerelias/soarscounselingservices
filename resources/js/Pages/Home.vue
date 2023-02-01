@@ -9,8 +9,11 @@
                         <h1 class="primary--text text-h5 text-sm-h4 text-lg-h3 mt-xl-4 font-weight-bold font-weight-bold">
                             Eamonn Walsh, LCSW
                         </h1>
+                        <h2 class="mt-4">
+                            {{ $t('home.greeting') }}
+                        </h2>
 
-                        <h2 class="text-subtitle-1 text-sm-body-1 mt-4 text-justify">
+                        <h2 class="text-subtitle-1 text-sm-body-1 mt-1 text-justify">
                             {{ $t('home.about_me') }}
                         </h2>
                     </v-col>
