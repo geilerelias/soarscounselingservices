@@ -44,7 +44,7 @@
                     </v-icon>
                     320 Town Center Ave | Suite C-11 #506
                     <br>
-                    Suwanee, Georgia 3004, USA
+                    Suwanee, Georgia 30024, USA
                 </div>
                 <div class="d-flex">
                     <v-icon
