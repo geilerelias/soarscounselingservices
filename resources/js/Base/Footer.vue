@@ -57,12 +57,6 @@
                             class="text-decoration-none text--primary">
                             soarsatlanta@yahoo.com
                         </a>
-                        <br>
-                        <a
-                            href="mailto:contact@soarscounselingservices.com <contact@soarscounselingservices.com>;"
-                            class="text-decoration-none text--primary">
-                            contact@soarscounselingservices.com
-                        </a>
                     </div>
                 </div>
 

@@ -123,7 +123,7 @@ export default {
                 content: `Eamonn is an incredible person. He takes time to get to know those he works with and seems to have an incredible way of being able to hear people out. He somehow stuck his hand out to save me when I didn't think anyone could`,
                 person: 'From participant'
             }, {
-                content: `I truly believe Eamonn helped save my son’s life. He helped my teenager at a time when I was unsure if anyone could. My son is now on his way to college and working at Chick-fil-A. I’m beyond grateful to Eam`,
+                content: `I truly believe Eamonn helped save my son’s life. He helped my teenager at a time when I was unsure if anyone could. My son is now on his way to college and working at Chick-fil-A. I’m beyond grateful to Eamonn.`,
                 person: 'From parent'
             },
         ]

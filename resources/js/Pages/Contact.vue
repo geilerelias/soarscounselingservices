@@ -112,11 +112,6 @@
                                             class="text-body-1 grey--text text--darken-1 mb-0">
                                             soarsatlanta@yahoo.com
                                         </a>
-                                        <a
-                                            href="mailto:contact@soarscounselingservices.com <contact@soarscounselingservices.com>;"
-                                            class="text-body-1 grey--text text--darken-1 mb-0">
-                                            contact@soarscounselingservices.com
-                                        </a>
                                     </div>
                                 </div>
                             </div>
